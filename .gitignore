@@ -1,2 +1,4 @@
 
 Frontend/test-next/\.next/
+
+Frontend/test-next/node_modules/\.cache/
