@@ -17,5 +17,6 @@ user page (Stephen Watson)
 sellers listing
 seller page for a specific textbook page (picture, condition, price, viewed number)
 forum for searching if a textbook was useful
+Rating and Review Page (Thien Tran)
 support page
 contact
