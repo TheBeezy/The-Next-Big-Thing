@@ -11,9 +11,9 @@ As a buyer, I would like to be able to view whether a specific textbook was usef
 As a buyer, I would like to see a picture of the textbook while browsing.
 As a user, I would like to be able to have the search pull up all the textbooks for my classes.
 
-Main page - > search for textbook, professor and course number, isbn, drop down
-login page
-user page
+Main page - > search for textbook, professor and course number, isbn, drop down (Brandon Y)
+login page 
+user page (Stephen Watson)
 sellers listing
 seller page for a specific textbook page (picture, condition, price, viewed number)
 forum for searching if a textbook was useful
