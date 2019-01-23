@@ -15,7 +15,7 @@ Main page - > search for textbook, professor and course number, isbn, drop down
 login page
 user page
 sellers listing
-support page
+seller page for a specific textbook page (picture, condition, price, viewed number)
 forum for searching if a textbook was useful
-specific textbook page (picture, condition, price, viewed number)
+support page
 contact
