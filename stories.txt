@@ -13,7 +13,7 @@ As a user, I would like to be able to have the search pull up all the textbooks 
 
 For next meeting 01/30/2019
 Main page - > search for textbook, professor and course number, isbn, drop down (Brandon Y)
-FireBase (Austin Lee)
+FireBase (Austin Lee, Stephen Watson)
 login page (Hieu Mai)
 user page (Stephen Watson)
 sellers listing (Austin Lee)
