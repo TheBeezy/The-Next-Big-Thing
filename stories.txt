@@ -2,9 +2,20 @@ Javascript, HTML, CSS - Languages
 NextJS, NodeJS - framework
 
 As a user, I would like to be able to login to the website using an lsu email.
-User Page
 As a user, I would like to be able to set up a time and place to meet to purchase a book.
 As a buyer, I would like to be able to look up a book and it redirect me to a page where the 
 As a seller, I would like to be able to search for a class and have the textbook listing per professor show up.
 As a seller, I would like to be notified on the website if someone has purchased a textbook.  
 As a seller/buyer, I would like to be able to leave a rating and review.
+As a buyer, I would like to be able to view whether a specific textbook was useful for a class.
+As a buyer, I would like to see a picture of the textbook while browsing.
+As a user, I would like to be able to have the search pull up all the textbooks for my classes.
+
+Main page - > search for textbook, professor and course number, isbn, drop down
+login page
+user page
+sellers listing
+support page
+forum for searching if a textbook was useful
+specific textbook page (picture, condition, price, viewed number)
+contact
