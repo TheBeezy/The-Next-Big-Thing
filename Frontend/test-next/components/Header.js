@@ -21,6 +21,11 @@ const Header = () => (
                 Fetch Example
             </a>
         </Link>
+        <Link href="/style-example">
+            <a style={linkStyle}>
+                Style Example
+            </a>
+        </Link>
     </div>
 )
 
