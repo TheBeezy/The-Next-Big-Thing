@@ -26,7 +26,7 @@ const Header = () => (
                 Style Example
             </a>
         </Link>
-	<Link href="/austin">
+	<Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule a Meeting
             </a>
