@@ -26,6 +26,16 @@ const Header = () => (
                 Style Example
             </a>
         </Link>
+	<Link href="/austin">
+            <a style={linkStyle}>
+                Austin Example
+            </a>
+        </Link>
+	<Link href="/server">
+            <a style={linkStyle}>
+                Schedule a place to meet
+            </a>
+        </Link>
     </div>
 )
 

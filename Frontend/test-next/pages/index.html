@@ -1,0 +1,21 @@
+<html>
+<script>
+
+function meetingLocation() {
+	var mylist = document.getElementById("myList");
+	document.getElementById("meetingLoc").value = mylist.options[mylist.selectedIndex].text;
+}
+
+</script>
+
+<body>
+<form>
+Select a meeting location:
+<select id = "myList" onchange = "meetingLocation()">
+	<option>PFT</option>
+	<option>Union</option>
+</select>
+<p>Your meeting location is: <input type = "text" readonly id = "meetingLoc" size = "20"></p>
+</form>
+</body>
+</html>
