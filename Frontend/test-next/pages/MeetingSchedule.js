@@ -1,20 +1,16 @@
 import Layout from '../components/Layout.js'
+import Choices from '../components/Choices'
 
-function meetingLocation() {
+//Create a const for a cleaner look
+const MeetingSchedule = () => (
+	<Layout>
+		<div>
+			<h1>Schedule a time and place too meet.</h1>
+			//Uses the Choices class to display the drop box menu of the meeting places
+			<Choices/>		
+		</div>
+	</Layout>
+);
 
-	var mylist = document.getElementId("myList");
-	document.getElementById("favorite").value = mylist.options[mylist.selectIndex].text;
-}
 
-export default () => (
-    <Layout>
-	<p>Select a meeting location:
-		<select id = "myList" onchange = "meetingLocation()">
-			<option>PFT</option>
-			<option>Union</option>
-		</select></p>
-	<p>Your meeting location is:
-	<input type = "text" id = "favorite" size = "20"/>
-	</p>
-    </Layout>
-)
+export default MeetingSchedule;
