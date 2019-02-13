@@ -91,8 +91,6 @@ class Choices extends React.Component {
 			The meeting place for this exchange will be at {this.state.location} at {this.state.hour}:{this.state.minutes} {this.state.period} on {this.state.month} {this.state.date}.
 			<br/>
 			<img src = "/static/download.png" />
-
-			<img src="http://localhost:3000/public/download.png" />
 			</div>
 		);
 	}
