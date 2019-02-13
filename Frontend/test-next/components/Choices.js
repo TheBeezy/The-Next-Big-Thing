@@ -1,6 +1,6 @@
 class Choices extends React.Component {
 	state = {
-		location : 'PFT', hour : '1', minutes : '00', month : 'January', date : '1'
+		location : 'PFT', hour : '1', minutes : '00', month : 'January', date : '1', period: 'AM'
 	}
 
 	render() {
@@ -83,9 +83,16 @@ class Choices extends React.Component {
 				<option value = "30">30</option>
 				<option value = "31">31</option>
 			</select>
+			<select onChange = {e => this.setState({period : e.target.value})} className = "form-control">
+				<option value = "AM">AM</option>
+				<option value = "PM">PM</option>
+			</select>
 			<br/>
-			The meeting place for this exchange will be at {this.state.location} at {this.state.hour}:{this.state.minutes} on {this.state.month} {this.state.date}.
+			The meeting place for this exchange will be at {this.state.location} at {this.state.hour}:{this.state.minutes} {this.state.period} on {this.state.month} {this.state.date}.
 			<br/>
+			<img src = "/static/download.png" />
+
+			<img src="http://localhost:3000/public/download.png" />
 			</div>
 		);
 	}
