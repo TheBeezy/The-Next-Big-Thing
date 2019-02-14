@@ -1,4 +1,4 @@
 
 Frontend/test-next/\.next/
-
+.DS_Store
 Frontend/test-next/node_modules/
