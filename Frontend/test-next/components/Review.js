@@ -7,7 +7,7 @@ class Review extends React.Component {
         document.getElementById("result").innerHTML = 
         "Your rating:<p/>"+document.getElementById('name').value + "<p/>" +
         document.getElementById('rate').value + "<p/>" +
-        document.getElementById('comment').value;
+        document.getElementById('coment').value;
     }
 
 
