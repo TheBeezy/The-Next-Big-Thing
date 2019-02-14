@@ -6,7 +6,7 @@ export default () => (
     <Layout>
         <h1>BookMill</h1>
         <p>
-            <input type="button"></input>
+            <button name="Search">Search</button>
             <input type="text" size="100"></input>
         </p>
     </Layout>
