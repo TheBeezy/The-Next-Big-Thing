@@ -17,5 +17,10 @@ export default () => (
 			<p>I added my paypal option to  my profile. When payment comes through I will meet.</p>
 			<p>I will pursue chargebacks to the fullest extend of the law.</p>
 		</body>
+		<footer id="userfooter">
+			<p>Contact us!</p>
+			<p>fakebusiness@gmail.com</p>
+			<p>(314) 159 - 2653</p>
+		</footer>
     </Layout>
 )
