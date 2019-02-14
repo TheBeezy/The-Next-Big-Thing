@@ -26,9 +26,14 @@ const Header = () => (
                 Style Example
             </a>
         </Link>
-	<Link href="/MeetingSchedule">
+		<Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule a Meeting
+            </a>
+        </Link>
+		<Link href="/userpage">
+            <a style={linkStyle}>
+                UserPage
             </a>
         </Link>
     </div>
