@@ -41,6 +41,12 @@ const Header = () => (
 			Profile 
 		</a>
 	</Link>
+
+    <Link href="/review-page">
+            <a style={linkStyle}>
+                Review
+            </a>
+        </Link>
     </div>
 )
 
