@@ -2,21 +2,38 @@ import Layout from '../components/Layout.js'
 import Link from 'next/link'
 import Fetch from 'isomorphic-unfetch'
 
-const PostLink = (props) => (
-    <li>
-        <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-            <a>{props.title}</a>
-        </Link>
-    </li>
-)
-
 export default () => (
     <Layout>
-        <h1>My Site</h1>
-        <u1>
-            <PostLink id="Hello-Nextjs" title="Hello Next.js"/>
-            <PostLink id="Learn-Nextjs" title="Learn Next.js"/>
-            <PostLink id="Beep!" title="Beep!"/>
-        </u1>
+        <h1>BookMill</h1>
+        <p>
+            <button name="Search">Search</button>
+            <input type="text" size="100"></input>
+        </p>
+        <style jsx>{`
+            h1, a {
+                font-family: "Arial";
+                margin: 20px;
+                padding: 10;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+                margin: 5px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+
+            a:hover {
+                opacity: 0.6;
+            }
+            
+        `}</style>
     </Layout>
 )
