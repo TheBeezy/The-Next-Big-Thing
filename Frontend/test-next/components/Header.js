@@ -36,6 +36,11 @@ const Header = () => (
                 Sign In / Create Account
             </a>
         </Link>
+		<Link href="/userpage">
+			<a style={linkStyle}>
+				Profile 
+			</a>
+		</Link>
     </div>
 )
 
