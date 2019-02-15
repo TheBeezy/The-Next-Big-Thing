@@ -5,11 +5,7 @@ export default () => (
         <head>
             <title>About Us</title>
         </head>
-        <p>About Us</p>
-	Select a meeting location:
-		<select id = "myList" onchange = "meetingLocation()">
-			<option>PFT</option>
-			<option>Union</option>
-		</select>
+        <h5>About Us</h5>
+	<p>...</p>
     </Layout>
 )
