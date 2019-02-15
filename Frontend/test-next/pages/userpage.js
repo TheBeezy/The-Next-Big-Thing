@@ -18,7 +18,7 @@ export default () => (
 			<p>I will pursue chargebacks to the fullest extend of the law.</p>
             <a style = {{width:50, height:auto}}
             href="https://www.paypal.com/donate/?token=N6WU3_egS4rnre1IdA6HQuNnzq1crlliR5Rs2f_c-h0L-ITqj8OpLj1PM5of0ccm9wyZSG&country.x=US&locale.x=US"><img id="paypal" src = "static/paypalLogo.png"/></a>
-            <style>
+            
             
     
 		</body>
