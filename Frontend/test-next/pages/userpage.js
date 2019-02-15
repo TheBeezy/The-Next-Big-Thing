@@ -17,7 +17,7 @@ export default () => (
 			<p>I added my paypal option to  my profile. When payment comes through I will meet.</p>
 			<p>I will pursue chargebacks to the fullest extend of the law.</p>
             <div>
-				<a href="https://www.paypal.com/donate/?token=N6WU3_egS4rnre1IdA6HQuNnzq1crlliR5Rs2f_c-h0L-ITqj8OpLj1PM5of0ccm9wyZSG&country.x=US&locale.x=US"><img id="paypal" src = "static/paypalLogo.png" width="100" height="100"/></a>
+				<a href="https://www.paypal.com/donate/?token=N6WU3_egS4rnre1IdA6HQuNnzq1crlliR5Rs2f_c-h0L-ITqj8OpLj1PM5of0ccm9wyZSG&country.x=US&locale.x=US"><img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/></a>
 			</div>
 		</body>
 		<footer id="userfooter">
