@@ -5,8 +5,8 @@ class Review extends React.Component {
     }
     handleSubmit(){
         document.getElementById("result").innerHTML = 
-        "Your rating:<p/>"+document.getElementById('name').value + "<p/>" +
-        document.getElementById('rate').value + "<p/>" +
+        "Name:&nbsp;"+document.getElementById('name').value + "<p/>Rating:&nbsp;" +
+        document.getElementById('rate').value + "<p/>Comments:<p/>" +
         document.getElementById('coment').value;
     }
 
