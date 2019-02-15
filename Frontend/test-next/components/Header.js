@@ -16,16 +16,6 @@ const Header = () => (
                 About
             </a>
         </Link>
-        <Link href="/fetch-example">
-            <a style={linkStyle}>
-                Fetch Example
-            </a>
-        </Link>
-        <Link href="/style-example">
-            <a style={linkStyle}>
-                Style Example
-            </a>
-        </Link>
 	    <Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule a Meeting
