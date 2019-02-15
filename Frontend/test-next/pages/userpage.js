@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 
 export default () => (
     <Layout>
+		<html>
 		<head>
 			<title>
 				Profile
@@ -25,5 +26,6 @@ export default () => (
 			<p>fakebusiness@gmail.com</p>
 			<p>(314) 159 - 2653</p>
 		</footer>
+		</html>
     </Layout>
 )
