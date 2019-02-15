@@ -11,11 +11,6 @@ const Header = () => (
                 Home
             </a>
         </Link>
-        <Link href="/about">
-            <a style={linkStyle}>
-                About
-            </a>
-        </Link>
 	    <Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule a Meeting
@@ -30,6 +25,11 @@ const Header = () => (
 		<a style={linkStyle}>
 			Profile 
 		</a>
+	</Link>
+	<Link href="/about">
+            <a style={linkStyle}>
+                About
+            </a>
 	</Link>
     </div>
 )
