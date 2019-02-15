@@ -1,16 +1,18 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout.js'
 import Review from '../components/Review.js'
 
-//Using Const to make it blend it with others
+//Const to blend in with others
 const reviewpage = () => (
 	<Layout>
         <head>
-            <title>Reviews</title>
-            <div>
-                <h1>Make A Review</h1><Review/>
-            </div>
+            <title>Schedule</title>
         </head>
+		<div>
+			<h1>Make A Review</h1>
+			<Review/>		
+		</div>
 	</Layout>
 );
+
 
 export default reviewpage;
