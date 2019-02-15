@@ -42,7 +42,7 @@ const Header = () => (
 		</a>
 	</Link>
 
-    <Link href="/review-page">
+    <Link href="/reviewpage">
             <a style={linkStyle}>
                 Review
             </a>
