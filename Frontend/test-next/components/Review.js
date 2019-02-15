@@ -5,11 +5,10 @@ class Review extends React.Component {
     }
     handleSubmit(){
         document.getElementById("result").innerHTML = 
-        "Name:&nbsp;"+document.getElementById('name').value + "<p/>Rating:&nbsp;" +
-        document.getElementById('rate').value + "<p/>Comments:<p/>" +
-        document.getElementById('coment').value;
+        "Name:&nbsp;"+document.getElementById('name').value + 
+        "<p/>Rating:&nbsp;" + document.getElementById('grade').value + 
+        "<p/>Comments:<p/>" +document.getElementById('coment').value;
     }
-
 
 
     render() {
@@ -17,7 +16,14 @@ class Review extends React.Component {
             <div>
             <form action="PayslipServlet" method="get">
             <p>Name:<input type="text" name="name" id="name"></input></p>
-            <p>Rating(A-F):<input type="text" name="rating" id="rate"></input></p>
+            <p>Ratin(A-F):<select onChange name="grade" id="grade">
+                <option value = "A">A</option>
+				<option value = "B">B</option>
+				<option value = "C">C</option>
+                <option value = "D">D</option>
+                <option value = "F">F</option>
+            </select>       
+            </p>
             <p>Comment: <textarea name="coment" id ="coment"></textarea></p>
             <p><input type="button" value="Submit" onClick={this.handleSubmit}></input></p>
 
