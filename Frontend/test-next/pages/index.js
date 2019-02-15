@@ -3,7 +3,11 @@ import Link from 'next/link'
 import Fetch from 'isomorphic-unfetch'
 
 export default () => (
+    
     <Layout>
+        <head>
+            <title>Home</title>
+        </head>
         <h1>BookMill</h1>
         <p>
             <button name="Search">Search</button>
