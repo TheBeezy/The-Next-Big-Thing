@@ -5,7 +5,7 @@ export default () => (
     <Layout>
 		<head>
 			<title>
-				Profile Page
+				Profile
 			</title>
 		</head>
 		<body>
