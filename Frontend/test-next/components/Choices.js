@@ -34,6 +34,10 @@ class Choices extends React.Component {
 				<option value = "30">30</option>
 				<option value = "45">45</option>
 			</select>
+			<select onChange = {e => this.setState({period : e.target.value})} className = "form-control">
+				<option value = "AM">AM</option>
+				<option value = "PM">PM</option>
+			</select>
 			<p> Select a date to meet</p>
 			<select onChange = {e => this.setState({month : e.target.value})} className = "form-control">
 				<option value = "January">January</option>
@@ -83,16 +87,9 @@ class Choices extends React.Component {
 				<option value = "30">30</option>
 				<option value = "31">31</option>
 			</select>
-			<select onChange = {e => this.setState({period : e.target.value})} className = "form-control">
-				<option value = "AM">AM</option>
-				<option value = "PM">PM</option>
-			</select>
 			<br/>
 			The meeting place for this exchange will be at {this.state.location} at {this.state.hour}:{this.state.minutes} {this.state.period} on {this.state.month} {this.state.date}.
 			<br/>
-			<img src = "/static/download.png" />
-
-			<img src="http://localhost:3000/public/download.png" />
 			</div>
 		);
 	}
