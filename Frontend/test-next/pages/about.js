@@ -9,10 +9,12 @@ export default () => (
 		<h4>For all business inquiries, contact us at the following places:</h4>
 		<p>Shivkaran Sarai:</p>
 		<p>ssarai1@lsu.edu</p>
-		<p>318 - 801 - 3772</p>
+		<p>(318)801-3772</p>
 		<br/>
-		
-		
+		<p>Stephen Watson</p>
+		<p>swats18@lsu.edu</p>
+		<p>(225)394-8138</p>
+		<br/>
 	<p>...</p>
     </Layout>
 )
