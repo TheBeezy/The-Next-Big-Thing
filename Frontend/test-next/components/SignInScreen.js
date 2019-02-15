@@ -4,6 +4,8 @@ import React from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import data from '../FireBaseConfig.json'
+import Layout from './Layout.js';
+
 
 // Configure Firebase through local json file.
 if (!firebase.apps.length) {
@@ -44,22 +46,28 @@ class SignInScreen extends React.Component {
   }
 
   render() {
+    
     if (!this.state.isSignedIn) {
       return (
+        <Layout>
         <div>
           <h1>BookMill</h1>
           <p>Please sign-in:</p>
           <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()}/>
         </div>
+        </Layout>
       );
     }
     return (
+      <Layout>
       <div>
         <h1>BookMill</h1>
         <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
         <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
       </div>
+      </Layout>
     );
+    
   }
 }
 
