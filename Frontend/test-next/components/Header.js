@@ -31,6 +31,11 @@ const Header = () => (
                 About
             </a>
 	</Link>
+	<Link href="/reviewpage">
+	    <a style={linkStyle}>
+		Review Page
+	    </a>
+	</Link>
     </div>
 )
 
