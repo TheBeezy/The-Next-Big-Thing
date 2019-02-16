@@ -11,25 +11,25 @@ const Header = () => (
                 Home
             </a>
         </Link>
-	    <Link href="/MeetingSchedule">
+	<Link href="/about">
             <a style={linkStyle}>
-                Schedule a Meeting
+                About
             </a>
-        </Link>
+	</Link>
         <Link href="/signin">
             <a style={linkStyle}>
                 Sign In / Create Account
+            </a>
+        </Link>
+    	<Link href="/MeetingSchedule">
+            <a style={linkStyle}>
+                Schedule a Meeting
             </a>
         </Link>
 	<Link href="/userpage">
 		<a style={linkStyle}>
 			Profile 
 		</a>
-	</Link>
-	<Link href="/about">
-            <a style={linkStyle}>
-                About
-            </a>
 	</Link>
 	<Link href="/reviewpage">
 	    <a style={linkStyle}>
