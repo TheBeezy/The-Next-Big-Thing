@@ -4,6 +4,7 @@ class Review extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(){
+        //Function to output the result of the input from the form
         document.getElementById("result").innerHTML = 
         "Name:&nbsp;"+document.getElementById('name').value + 
         "<p/>Rating:&nbsp;" + document.getElementById('grade').value + 
@@ -14,6 +15,7 @@ class Review extends React.Component {
 
     render() {
         return (
+            //Using form tag for user input and to create a submit button
             <div>
             <form action="PayslipServlet" method="get">
             <p>Name:<input type="text" name="name" id="name"></input></p>
