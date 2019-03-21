@@ -6,7 +6,6 @@ import firebase from 'firebase';
 import data from '../FireBaseConfig.json'
 import Layout from './Layout.js';
 
-
 // Configure Firebase through local json file.
 if (!firebase.apps.length) {
   firebase.initializeApp(data);
