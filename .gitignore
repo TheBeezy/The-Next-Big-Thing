@@ -3,3 +3,4 @@ Frontend/test-next/\.next/
 .DS_Store
 Frontend/test-next/node_modules/
 Frontend/test-next/FireBaseConfig.json
+npm-debug.log
