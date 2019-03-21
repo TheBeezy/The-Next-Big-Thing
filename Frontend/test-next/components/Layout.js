@@ -8,6 +8,7 @@ const layoutStyle = {
 
 const Layout = (props) => (
     <div style = {layoutStyle}>
+        <h1> Bookmill </h1>
         <Header/>
         {props.children}
     </div>
