@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SignInScreen from '../components/SignInScreen'
 
 const linkStyle = {
     marginRight: 15
@@ -11,31 +12,36 @@ const Header = () => (
                 Home
             </a>
         </Link>
-	<Link href="/about">
+	    <Link href="/about">
             <a style={linkStyle}>
                 About
             </a>
-	</Link>
-        <Link href="/signin">
-            <a style={linkStyle}>
-                Sign In / Create Account
-            </a>
-        </Link>
+	    </Link>
     	<Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule a Meeting
             </a>
         </Link>
-	<Link href="/userpage">
-		<a style={linkStyle}>
-			Profile 
-		</a>
-	</Link>
-	<Link href="/reviewpage">
-	    <a style={linkStyle}>
-		Review Page
-	    </a>
-	</Link>
+        <Link href="/userpage">
+            <a style={linkStyle}>
+                Profile 
+            </a>
+        </Link>
+        <Link href="/reviewpage">
+            <a style={linkStyle}>
+            Review Page
+            </a>
+        </Link>
+        <Link href="/database-example">
+            <a style={linkStyle}>
+                Test adding to Database
+            </a>
+        </Link>
+        <Link href="/signin">
+            <a style={linkStyle}>
+                Sign In / Create Account
+            </a>
+        </Link>
     </div>
 )
 
