@@ -8,7 +8,6 @@ export default () => (
         <head>
             <title>Home</title>
         </head>
-        <h1>BookMill</h1>
         <p>
             <button name="Search">Search</button>
             <input type="text" size="100"></input>
