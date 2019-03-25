@@ -1,14 +1,19 @@
 import Header from './Header'
 
+// CSS Styling
 const layoutStyle = {
     margin: 20,
     padding: 20,
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
+}
+const h1Style = {
+    fontSize: '20pt',
+    fontFamily: 'Arial',
 }
 
 const Layout = (props) => (
     <div style = {layoutStyle}>
-        <h1> Bookmill </h1>
+        <div style = {h1Style}><h1> Bookmill </h1></div>
         <Header/>
         {props.children}
     </div>
