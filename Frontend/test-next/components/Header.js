@@ -1,12 +1,19 @@
 import Link from 'next/link'
-import SignInScreen from '../components/SignInScreen'
 
+// CSS Styling
 const linkStyle = {
-    marginRight: 15
+    fontFamily: 'Arial',
+    fontSize: '20pt',
+    marginRight: '3%',
+    marginLeft: '3%',
+}
+const headerStyle = {
+    marginLeft: '5%',
+    marginRight: '5%',
 }
 
 const Header = () => (
-    <div>
+    <div style={headerStyle}>
         <Link href="/index">
             <a style={linkStyle}>
                 Home
@@ -19,7 +26,8 @@ const Header = () => (
 	    </Link>
     	<Link href="/MeetingSchedule">
             <a style={linkStyle}>
-                Schedule a Meeting
+                Schedule
+                Meeting
             </a>
         </Link>
         <Link href="/userpage">
@@ -34,12 +42,12 @@ const Header = () => (
         </Link>
         <Link href="/database-example">
             <a style={linkStyle}>
-                Test adding to Database
+                Database Entry
             </a>
         </Link>
         <Link href="/signin">
             <a style={linkStyle}>
-                Sign In / Create Account
+                Sign In
             </a>
         </Link>
     </div>
