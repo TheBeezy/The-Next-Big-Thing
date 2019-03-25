@@ -1,12 +1,20 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
 
+// CSS Styling
+const boxStyle = {
+  width : '150px',
+  margin: '1',
+};
+
 // Initalizes firebase only once using the firebase config file
 if (!firebase.apps.length) {
     firebase.initializeApp(data);
   }
+
 // Need to include a reference to the database
 var database = firebase.database();
+var db = firebase.firestore();
 
 class Database extends React.Component {
     constructor(props) {
@@ -31,72 +39,61 @@ class Database extends React.Component {
 
     // Adds a new textbook
     handleSubmit(event) {
-        // Stops the page from refreshing
-        event.preventDefault();
-        // Makes a popup
-        alert('A textbook was added: ' + this.state.name);
-        // Creates a document in textbooks (database/textbooks/{name of document})
-        var newTextBook = database.ref('textbooks/' + this.state.name);
-        // Sets the document's contents based on the text fields
-        newTextBook.set({
-            name: this.state.name,
-            edition: this.state.ed,
-            subject: this.state.subj,
-            professor: this.state.prof
-        // Error handling: if fail, log to console; else, log all textbooks to console
-        }, function(error) {
-            if (error) {
-              console.log(error)
-            } else {
-                database.ref('textbooks').on("value", function(snapshot) {
-                    console.log(snapshot.val());
-                 }, function (error) {
-                    console.log("Error: " + error.code);
-                 });
-            }
-        });
+      // Stops the page from refreshing
+      event.preventDefault();
+      // Creates a document in textbooks (database/textbooks/{name of document})
+      var newTextBook = database.ref('textbooks/' + this.state.name);
+      // Sets the document's contents based on the text fields
+      var info = {
+        name: this.state.name,
+        edition: this.state.ed,
+        subject: this.state.subj,
+        professor: this.state.prof
+      }
+      // Sets the data
+      var setTextBook = db.collection('textbooks').doc(this.state.name).set(info);
     }
    
-    // Form for submitting information (note the names)
-    render() {
-      return (
+  // Form for submitting information (note the names)
+  render() {
+    return (
+      <div style={boxStyle}>
         <form onSubmit={this.handleSubmit}>
-            <title>Database Entry Example</title>
-            <h1>Database Entry Example</h1>
-            <label>
-                Name:
-            <input
-                name="name"
-                type="text"
-                onChange={this.handleInputChange} />
-            </label>
-            <br />
-            <label>
-                Edition:
-            <input
-                name="ed"
-                type="text"
-                onChange={this.handleInputChange} />
-            </label>
-            <br />
-            <label>
-                Subject:
-            <input
-                name="subj"
-                type="text"
-                onChange={this.handleInputChange} />
-            </label>
-            <br />
-            <label>
-                Professor:
-            <input
-                name="prof"
-                type="text"
-                onChange={this.handleInputChange} />
-            </label>
-            <br />
-            <input type="submit" value="Submit" />
+          <label>
+            Name:
+              <input
+              name="name"
+              type="text"
+              onChange={this.handleInputChange} />
+          </label>
+          <br />
+          <label>
+            Edition:
+              <input
+              name="ed"
+              type="text"
+              onChange={this.handleInputChange} />
+          </label>
+          <br />
+          <label>
+            Subject:
+              <input
+              name="subj"
+              type="text"
+              onChange={this.handleInputChange} />
+          </label>
+          <br />
+          <label>
+            Professor:
+              <input
+              name="prof"
+              type="text"
+              onChange={this.handleInputChange} />
+          </label>
+          <br />
+          <input type="submit" value="Submit" />
         </form>
+      </div>
       );
     }
   }
