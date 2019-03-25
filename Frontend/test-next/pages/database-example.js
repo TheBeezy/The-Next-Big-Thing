@@ -1,10 +1,35 @@
 import Layout from '../components/Layout'
-import SignInScreen from '../components/SignInScreen'
-import Firebase from 'firebase'
 import Database from '../components/Database'
 
 export default () => (
     <Layout>
-        <Database/>
+        <title>Database Entry Example</title>
+        <div>
+        <h1>Database Entry Example</h1>
+        <Database />
+        </div>
+        <style jsx>{`
+            h1, a {
+                font-family: "Arial";
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+                margin: 5px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+
+            a:hover {
+                opacity: 0.6;
+            }
+        `}</style>
     </Layout>
 )
