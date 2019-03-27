@@ -1,0 +1,51 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 61     3  IE   1002         1  INDUSTRIAL ENGR FUND   3.0   900-1020    T TH  1206 PATRICK TAYLOR
+ 54     6  IE   3201         1  PRIN ENGR ECONOMY      3.0  1100-1220   M W    0132 PRESCOTT
+ 90    10  IE   3302         1  ENGR STATISTICS        3.0   800-0920   M W    0204 TUREAUD HALL
+ 75     5  IE   3520         1  SUPPLY CHAIN LOGISTI   3.0   930-1050   M W    0214 WILLIAMS
+ 15        IE   3699 CLI     1  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     2  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     3  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     4  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     5  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     6  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     7  ENGINEERING PRACTICE   3.0  TBA
+ 15        IE   3699 CLI     8  ENGINEERING PRACTICE   3.0  TBA
+ 74     6  IE   4362         1  ADV ENGRNG STAT        3.0   100-0220   M W    1245 PATRICK TAYLOR
+ 25        IE   4427         1  ECOMMERCE ENGR         3.0   230-0320   M W
+                     LAB                                     330-0450   M W
+ 23     2  IE   4461         1  HUMAN FACTORS ENGR     3.0   900-1020    T TH
+                     LAB                                     130-0320    T
+ 25        IE   4461         2  HUMAN FACTORS ENGR     3.0   900-1020    T TH
+                     LAB                                     330-0520    T
+ 25        IE   4461         3  HUMAN FACTORS ENGR     3.0   900-1020    T TH
+                     LAB                                     130-0320      TH
+ 25        IE   4461         4  HUMAN FACTORS ENGR     3.0   900-1020    T TH
+                     LAB                                     330-0520      TH
+ 67     9  IE   4516         1  PLANT & SYSTEMS DESN   3.0  1100-1220   M W    0221 TUREAUD HALL
+ 33     7  IE   4530         1  LEAN MAN SYSTEMS       3.0  1030-1120    T TH  1245 PATRICK TAYLOR
+                     LAB                                     100-0350    T
+ 40        IE   4530         2  LEAN MAN SYSTEMS       3.0  1030-1120    T TH  1245 PATRICK TAYLOR
+                     LAB                                     100-0350      TH
+ 42     6  IE   4597         1  IE SENIOR DESIGN I     2.0   100-0150       F  1245 PATRICK TAYLOR
+                     LAB                                     200-0450       F
+ 35    13  IE   4598 LAB     1  IE SENIOR DESIGN II    2.0  1200-0350       F  1206 PATRICK TAYLOR
+ 21     4  IE   4785 RES     2  HEALTHCARE ENG         1-3   450-0610N  M W    1131 PATRICK TAYLOR
+ 40        IE   4785 RES     1  SPEC TOP IND ENGR      1-3   430-0550N   T TH  1131 PATRICK TAYLOR
+ 30        IE   7722         1  IE RESEARCH METHODS    3.0  1030-1150   M W
+  5        IE   7724 IND     1  INDEP STUDY IE         1-3  TBA
+ 20        IE   7724 IND     2  INDEP STUDY IE         1-3  TBA
+ 20        IE   7724 IND     3  INDEP STUDY IE         1-3  TBA
+ 19     1  IE   7764         1  LOGISTICS & DIST SYS   3.0   130-0420       F  1409 BUS ED S WING
+ 99        IE   8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      KNAPP G
+  5        IE   8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      IKUMA L
+ 99        IE   8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      NAHMENS I
+ 99        IE   8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      JEON H
+ 99        IE   8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      SARKER B
+
+
+
+
+Fall  2019   INDUSTRIAL ENGINEERING

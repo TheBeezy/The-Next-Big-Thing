@@ -1,0 +1,26 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 57     3  EVEG 1050 LAB     1  INTRO ENV ENGR         1.0  1230-0220     W                                          PARDUE J
+ 47     3  EVEG 2000         1  ENV ENGR I             3.0   300-0420    T TH  1212 PATRICK TAYLOR                   ZHANG H
+ 37     3  EVEG 3110         2  WATR/WSTWTR TREATMNT   3.0   900-1020    T TH  0210 TUREAUD HALL                     ZHU X
+     **                    FOR EVEG STUDENTS ONLY
+ 99    11  EVEG 3110         1  WATR/WSTWTR TREATMNT   3.0  1200-0120    T TH  1100 PATRICK TAYLOR
+ 57     3  EVEG 3145         1  ENV ENGR III           3.0  1030-1150    T TH  0132 J C MILLER
+ 97    13  EVEG 3200         1  WATR RESOURCES ENGR    3.0   130-0250   M W    1263 PATRICK TAYLOR                   DENG Z
+ 43     7  EVEG 4120         1  DSN SLD&HAZ WST MGT    3.0  1030-1150    T TH                                        MOE W
+ 49     1  EVEG 4125         1  ENV TRANSPORT PROC     3.0  1030-1120   M W F  0210 WILLIAMS                         ZHANG H
+ 48     2  EVEG 4150         1  INT ENVR SYST DESN I   3.0   230-0520   M      1236 PATRICK TAYLOR                   PARDUE J
+ 41     4  EVEG 4154         1  SUSTAINABILITY ENGR    3.0   300-0420    T TH  0206 WILLIAMS
+ 23     2  EVEG 4780         1  SP TOP IN EVEG DESN    3.0   830-1120   M      0324 HODGES HALL     CI-WRITTEN&TECH  ELANGO V
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 24     1  EVEG 4780         2  SP TOP IN EVEG DESN    3.0   830-1120     W    0129 TUREAUD HALL    CI-WRITTEN&TECH  ELANGO V
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 34     1  EVEG 4781         1  SP TOP IN EVEG SCI     3.0   130-0250    T TH  0136 LOCKETT
+
+
+
+
+Fall  2019   ENVIRONMENTAL ENGINEERING

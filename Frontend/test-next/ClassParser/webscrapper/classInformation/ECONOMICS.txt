@@ -1,0 +1,93 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+179     1  ECON 2000         7  PRIN MICROECONOMICS    3.0   730-0820   M W F  1510 BUS ED AUDITORI                  SHARKEY B
+298     2  ECON 2000         8  PRIN MICROECONOMICS    3.0   900-1020   M W    1510 BUS ED AUDITORI                  KENISTON D
+ 99     1  ECON 2000         3  PRIN MICROECONOMICS    3.0   900-1020    T TH  1510 BUS ED AUDITORI                  NEWMAN R
+180    20  ECON 2000         9  PRIN MICROECONOMICS    3.0   900-1020    T TH                       RES COLG-BUSINE
+     **                    Reserved for Business Residential College Students
+112     8  ECON 2000         2  PRIN MICROECONOMICS    3.0  1030-1150    T TH  1620 BUS ED N WING                    PERALTA A
+119     1  ECON 2000         1  PRIN MICROECONOMICS    3.0   130-0250    T TH  1620 BUS ED N WING                    PERALTA A
+299     1  ECON 2000         6  PRIN MICROECONOMICS    3.0   430-0550N   T TH  1510 BUS ED AUDITORI                  COOMBS C
+ 26     4  ECON 2001         1  HNRS PRINC MICROECON   3.0  1030-1150    T TH  1745 BUS ED N WING                    WEIMER D
+ 57     3  ECON 2010         6  PRIN MACROECONOMICS    3.0   830-0920   M W F  1920 BUS ED N WING                    BRIDGES D
+ 49    11  ECON 2010         5  PRIN MACROECONOMICS    3.0  1030-1120   M W F  1920 BUS ED N WING                    BRIDGES D
+ 59     1  ECON 2010         3  PRIN MACROECONOMICS    3.0  1130-1220   M W F  1845 BUS ED N WING                    JURAEV N
+ 60        ECON 2010         8  PRIN MACROECONOMICS    3.0   130-0220   M W F  1845 BUS ED N WING                    JURAEV N
+ 59     1  ECON 2010         1  PRIN MACROECONOMICS    3.0   730-0850    T TH  1800 BUS ED N WING                    NGUYEN M
+ 58     2  ECON 2010         9  PRIN MACROECONOMICS    3.0   900-1020    T TH  1735 BUS ED N WING                    WANG T
+ 35    25  ECON 2010         7  PRIN MACROECONOMICS    3.0  1030-1150    T TH  1800 BUS ED N WING                    NGUYEN M
+ 57     3  ECON 2010         2  PRIN MACROECONOMICS    3.0  1200-0120    T TH  1735 BUS ED N WING                    YANG D
+ 56     4  ECON 2010        10  PRIN MACROECONOMICS    3.0   130-0250    T TH  1735 BUS ED N WING                    WANG T
+ 60        ECON 2010         4  PRIN MACROECONOMICS    3.0   300-0420    T TH  1735 BUS ED N WING                    YANG D
+ 25    15  ECON 2030         1  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220     W    1745 BUS ED N WING                    LI R
+ 38     2  ECON 2030         2  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220       F  1745 BUS ED N WING                    LI R
+ 38     2  ECON 2030         3  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220     W    1745 BUS ED N WING                    LI R
+ 39     1  ECON 2030         4  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220       F  1745 BUS ED N WING                    LI R
+ 36     4  ECON 2030         5  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220     W    1305 BUS ED S WING                    ALIYEV A
+ 39     1  ECON 2030         6  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220       F  1720 BUS ED N WING                    ALIYEV A
+ 38     2  ECON 2030         7  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220     W    1720 BUS ED N WING                    ALIYEV A
+ 39     1  ECON 2030         8  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220       F  1720 BUS ED N WING                    ALIYEV A
+  6    34  ECON 2030         9  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220     W    1425 BUS ED S WING                    YANG M
+ 34     6  ECON 2030        10  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220       F  1305 BUS ED S WING                    YANG M
+ 35     5  ECON 2030        11  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220     W    1305 BUS ED S WING                    YANG M
+ 38     2  ECON 2030        12  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220       F  1305 BUS ED S WING                    YANG M
+ 33     7  ECON 2030        13  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220     W    1325 BUS ED S WING                    KUMPAS C
+ 40        ECON 2030        14  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                    1130-1220       F  1225 BUS ED S WING                    KUMPAS C
+ 36     4  ECON 2030        15  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220     W                                          KUMPAS C
+ 36     4  ECON 2030        16  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                     REC                                     130-0220       F  1225 BUS ED S WING                    KUMPAS C
+ 38    22  ECON 2035         7  MONEY/BANK/MACRO ACT   3.0   930-1020   M W F  0102 TUREAUD HALL                     GINGELESKIE P
+ 53     7  ECON 2035         6  MONEY/BANK/MACRO ACT   3.0  1130-1220   M W F  1835 BUS ED N WING                    LE K
+ 41    19  ECON 2035         5  MONEY/BANK/MACRO ACT   3.0  1230-0120   M W F  1845 BUS ED N WING                    GINGELESKIE P
+ 60        ECON 2035         3  MONEY/BANK/MACRO ACT   3.0   130-0220   M W F  1835 BUS ED N WING                    LE K
+ 59     1  ECON 2035         4  MONEY/BANK/MACRO ACT   3.0   730-0850    T TH  1845 BUS ED N WING                    ASADI M
+ 56     4  ECON 2035         2  MONEY/BANK/MACRO ACT   3.0   900-1020    T TH  1800 BUS ED N WING                    BUI T
+ 48    12  ECON 2035         1  MONEY/BANK/MACRO ACT   3.0  1030-1150    T TH  1845 BUS ED N WING                    ASADI M
+ 58     2  ECON 2035         8  MONEY/BANK/MACRO ACT   3.0  1200-0120    T TH  1800 BUS ED N WING                    BUI T
+109    11  ECON 4110         1  PUBLIC FINANCE         3.0   600-0850N   T     1620 BUS ED N WING                    RICHARDSON J
+ 24    16  ECON 4421         1  HEALTH CARE ECONOMIC   3.0   130-0250    T TH  1920 BUS ED N WING                    WILLAGE B
+  1        ECON 4445 CLI     1  INTERN IN ECONOMICS    3.0  TBA                                     PERMIS OF DEPT   TERRELL M
+ 30    10  ECON 4520         1  INTERNATIONAL TRADE    3.0  1130-1250   M W    1720 BUS ED N WING                    STAHL R
+ 51     9  ECON 4550         1  INTERNATIONL FINANCE   3.0   430-0550N   T TH  1845 BUS ED N WING                    DIX M
+ 35     5  ECON 4610         1  INTR MATH ECON         3.0   830-0950   M W    1720 BUS ED N WING                    STAHL R
+ 32     8  ECON 4630         1  INTR TO ECONOMETRICS   3.0  1200-0120    T TH  1305 BUS ED S WING                    WANG X
+ 34     6  ECON 4631         1  ECONOMETRIC METHODS    3.0   300-0420    T TH  1305 BUS ED S WING                    WANG X
+ 26    14  ECON 4710         2  AGG ECON ANALYSIS      3.0   900-1020    T TH  1305 BUS ED S WING                    CHANDA A
+ 39     1  ECON 4710         1  AGG ECON ANALYSIS      3.0   130-0250    T TH  0206 TUREAUD HALL                     UNEL B
+ 38     2  ECON 4720         2  INT MICROECON THEORY   3.0   130-0250   M W    1225 BUS ED S WING                    BELAND L
+ 34     6  ECON 4720         1  INT MICROECON THEORY   3.0  1030-1150    T TH  1425 BUS ED S WING                    WILLAGE B
+ 30        ECON 7255         1  LABOR ECONOMICS        3.0   300-0420   M W    1745 BUS ED N WING                    BELAND L
+ 30        ECON 7591         1  ADV TOPICS MACRO       3.0  1200-0120    T TH  1425 BUS ED S WING                    CHANDA A
+ 19     1  ECON 7610         1  MATH FOR ECONOMISTS    3.0   830-0950   M W    1409 BUS ED S WING                    STAHL R
+ 30        ECON 7629         1  APPL ECONOMETRICS      3.0  1030-1150    T TH  0125 TUREAUD HALL                     ZHOU Q
+ 40        ECON 7630         1  ECONOMETRIC METHODS    3.0   900-1020    T TH  1425 BUS ED S WING                    TERRELL M
+ 20        ECON 7632         1  MICROECONOMETRICS      3.0   130-0250    T TH  1305 BUS ED S WING                    ZHOU Q
+ 30        ECON 7701         1  INTRO ADV MICRO        3.0  1000-1120   M W    1720 BUS ED N WING                    STAHL R
+ 30        ECON 7702         1  ADV MICRO I            3.0  1030-1150   M W    1700 BUS ED N WING                    KORAY F
+ 99        ECON 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      KORAY F
+ 99        ECON 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      TERRELL M
+ 99        ECON 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      KENISTON D
+ 99        ECON 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      UNEL B
+ 99        ECON 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      CHANDA A
+ 99        ECON 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      MOCAN H
+
+
+
+
+Fall  2019   ECONOMICS

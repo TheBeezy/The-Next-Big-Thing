@@ -1,0 +1,20 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   CPLT 2201  ***       CROSS-LISTED WITH   ENGL 2201
+ 14     1  CPLT 2201         1  INTRO WORLD LIT TRAD   3.0   130-0250    T TH  0235 LOCKETT
+      ***   CPLT 2202  ***       CROSS-LISTED WITH   ENGL 2202
+ 15        CPLT 2202         1  INT MODERN WORLD LIT   3.0  1030-1150    T TH  0203 WOODIN HALL                      BASIRI N
+ 10        CPLT 7020 SEM     1  HIST & THEOR CRITICI   3.0   130-0250   M W    0130 LOCKETT                          SIKES A
+  6     2  CPLT 7120 SEM     1  THEORY INTERSECTIONS   3.0  1200-0250    T                                           RASTOGI P
+  8        CPLT 7130 SEM     2  DRAMA AFRN DIASPORA    3.0  1030-1150    T TH  0169 COATES                           EUBA F
+ 10        CPLT 7130 SEM     1  DANTE & ARABIC PHIL    3.0  1200-0250      TH  0285 LOCKETT                          STONE G
+ 10        CPLT 7140 SEM     1  SCIFI SPEC ETHNOGPHY   3.0   300-0550    T                                           RAHDER M
+  5        CPLT 9000 RES     1  DISSERTATION RESEARC   1-12 TBA                                                      OTERO S
+  4        CPLT 9000 RES     2  DISSERTATION RESEARC   1-12 TBA                                                      RAFFOUL F
+  4        CPLT 9000 RES     3  DISSERTATION RESEARC   1-12 TBA                                                      STONE G
+
+
+
+
+Fall  2019   COMPARATIVE LITERATURE

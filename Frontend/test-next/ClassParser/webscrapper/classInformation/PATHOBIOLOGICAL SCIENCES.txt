@@ -1,0 +1,26 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 10        PBS  7003 SEM     1  SPEC TOP PATHOB SCI    1-4  TBA                                                      MACALUSO K
+ 10        PBS  7003 SEM     2  SPEC TOP PATHOB SCI    1-4  TBA                                                      GUERRERO-PLAT
+ 10        PBS  7004         1  CUR LIT PATHOBIO SCI   1.0  TBA                                                      MARTINEZ J
+ 10        PBS  7004         2  CUR LIT PATHOBIO SCI   1.0  TBA                                                      GUERRERO-PLAT
+ 10        PBS  7004         3  CUR LIT PATHOBIO SCI   1.0  TBA                                                      STOUT R
+ 10        PBS  7004         4  CUR LIT PATHOBIO SCI   1.0  TBA                                                      JEYASEELAN S
+ 10        PBS  7004         5  CUR LIT PATHOBIO SCI   1.0  TBA                                                      LANGOHR I
+ 25        PBS  7007 SEM     1  PBS SEMINAR            1.0  TBA                                                      MACALUSO K
+ 25        PBS  7413 LAB     1  FLOW CYTOMETRY LAB     1.0  TBA                                                      DIETRICH M
+  9     1  PBS  7417         1  PATH INF PARAS AGENT   1-4  TBA
+ 10        PBS  7501         1  VET CELLULAR PATH      3.0  TBA
+ 10        PBS  7502         1  ADV SYSTEM VET PATH    5.0  TBA                                                      PAULSEN D
+                     LAB                                    TBA                                                      PAULSEN D
+ 15        PBS  7508         1  HISTOPATH SLIDE CONF   1.0  TBA                                                      LANGOHR I
+ 10        PBS  7509 LAB     1  SURGICAL PATHOLOGY     1-2  TBA                                                      LANGOHR I
+ 10        PBS  7516 RES     1  ADV DIAG PATH ANIMAL   1-2  TBA                                                      LANGOHR I
+ 10        PBS  7530         1  LAB ANIMAL SCIENCE I   2.0  TBA                                                      STOUT R
+                     LAB                                    TBA                                                      STOUT R
+
+
+
+
+Fall  2019   PATHOBIOLOGICAL SCIENCES

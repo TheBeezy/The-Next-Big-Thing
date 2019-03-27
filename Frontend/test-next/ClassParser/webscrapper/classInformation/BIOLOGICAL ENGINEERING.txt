@@ -1,0 +1,57 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 30        BE   1251         1  INTRO ENGR METHODS     2.0   130-0220   M      E137 HOWE RUSSELL E  CI-VISUAL&TECH   MONROE W
+                                                                                                    SVC LEARNING
+                     LAB                                     900-1150    T                                           TOTARO N
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 30        BE   1251         2  INTRO ENGR METHODS     2.0   130-0220   M      E137 HOWE RUSSELL E  SVC LEARNING     MONROE W
+                     LAB                                     930-1220     W                                          TOTARO N
+ 27     3  BE   1251         3  INTRO ENGR METHODS     2.0   130-0220   M      E137 HOWE RUSSELL E  SVC LEARNING     MONROE W
+                     LAB                                     130-0420     W                                          TOTARO N
+ 29     1  BE   1251         4  INTRO ENGR METHODS     2.0   130-0220   M      E137 HOWE RUSSELL E  SVC LEARNING     MONROE W
+                     LAB                                     130-0420      TH                                        TOTARO N
+ 32    13  BE   2352         1  QUANT BIOL IN ENGR     3.0  1030-1120   M W    1125 BUS ED S WING                    SATHIVEL S
+                     LAB                                     130-0420   M      1212 PATRICK TAYLOR
+ 41     4  BE   2352         2  QUANT BIOL IN ENGR     3.0  1030-1120   M W    1125 BUS ED S WING                    SATHIVEL S
+                     LAB                                     130-0420    T     1206 PATRICK TAYLOR
+ 14     6  BE   3320         1  MECH DESN BIOL ENGR    3.0   930-1020   M W    1206 PATRICK TAYLOR                   HOFFSETH K
+                     LAB                                     130-0420   M      0106 AG METAL BLDG                    LIBI S
+  8    12  BE   3320         2  MECH DESN BIOL ENGR    3.0   930-1020   M W    1206 PATRICK TAYLOR                   HOFFSETH K
+                     LAB                                     130-0420    T     0106 AG METAL BLDG                    LIBI S
+ 19     1  BE   3320         3  MECH DESN BIOL ENGR    3.0   930-1020   M W    1206 PATRICK TAYLOR                   HOFFSETH K
+                     LAB                                    1030-0120      TH  0106 AG METAL BLDG                    LIBI S
+ 25        BE   3989 RES     1  SPEC PROJ IN BIOL EN   1-4  TBA
+  5        BE   3989 RES     2  SPEC PROJ IN BIOL EN   1-4  TBA
+  5        BE   3989 RES     3  SPEC PROJ IN BIOL EN   1-4  TBA
+ 25        BE   3989 RES     4  SPEC PROJ IN BIOL EN   1-4  TBA
+ 60     2  BE   4290 RES     1  SEN ENGR DES           2.0   430-0520N  M W    1206 PATRICK TAYLOR                   THEEGALA C
+ 26     2  BE   4303         1  ENGR PROP OF BIOL MA   3.0   930-1020    T TH  1620 BUS ED N WING   CI-WRITTEN&SPOK  BOLDOR D
+                                                                                                    SVC LEARNING
+                     LAB                                    1030-0120    T     0140 AG METAL BLDG                    LIBI S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 20     8  BE   4303         2  ENGR PROP OF BIOL MA   3.0   930-1020    T TH  1620 BUS ED N WING   SVC LEARNING     BOLDOR D
+                     LAB                                     130-0420     W    0140 AG METAL BLDG                    LIBI S
+ 23     2  BE   4336         1  BIOCOMPATIBILITY MAT   3.0  1230-0120   M W F  0115 E B DORAN                        MARTIN E
+ 23     2  BE   4337         1  REGENERATIVE MED       3.0   830-0920   M W F  0115 E B DORAN                        JUNG J
+ 31     4  BE   4383         1  NATURAL RESOURCE ENG   3.0  1030-1150    T TH  0119 J C MILLER                       BENGTSON R
+ 23     2  BE   4910         1  SPECIAL TOPICS BE      3.0   900-1020    T TH  0115 E B DORAN                        KWON Y
+ 20    10  BE   4910         2  SPECIAL TOPICS BE      3.0   430-0550N   T TH  1212 PATRICK TAYLOR
+  9     1  BE   4989 RES     1  IND STUDY IN BIOL EN   1-4  TBA
+ 25        BE   7909 RES     1  ADV TOP BIOL ENGR      1-4   930-1220     W    0115 E B DORAN                        SABLIOV C
+ 15        BE   7910         1  SPECIAL TOPICS IN BE   3.0   830-1120       F  1305 BUS ED S WING
+ 10        BE   8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      BOLDOR D
+ 10        BE   8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      SABLIOV C
+ 10        BE   8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      MARTIN E
+  5        BE   9000 RES     1  DISSERT RESEARCH       1-12 TBA                                                      BOLDOR D
+  5        BE   9000 RES     2  DISSERT RESEARCH       1-12 TBA                                                      JUNG J
+  5        BE   9000 RES     3  DISSERT RESEARCH       1-12 TBA                                                      MARTIN E
+  5        BE   9000 RES     4  DISSERT RESEARCH       1-12 TBA                                                      SABLIOV C
+  5        BE   9000 RES     5  DISSERT RESEARCH       1-12 TBA                                                      KWON Y
+  5        BE   9000 RES     6  DISSERT RESEARCH       1-12 TBA                                                      HOFFSETH K
+  5        BE   9000 RES     7  DISSERT RESEARCH       1-12 TBA
+
+
+
+
+Fall  2019   BIOLOGICAL ENGINEERING
