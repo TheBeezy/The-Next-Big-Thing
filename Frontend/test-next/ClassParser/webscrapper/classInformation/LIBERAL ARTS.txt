@@ -1,0 +1,10 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 19     1  LIBA 7000 SEM     1  LIB ARTS: METH INQUI   3.0  TBA                                     100% WEB BASED   PASQUIER M
+     **                    WORLD WIDE WEB-BASED DELIVERY
+
+
+
+
+Fall  2019   LIBERAL ARTS

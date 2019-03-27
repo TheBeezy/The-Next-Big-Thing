@@ -1,0 +1,12 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   HEBR 1001  ***       CROSS-LISTED WITH   REL  1001
+ 19     1  HEBR 1001         1  BEGINNING HEBREW       4.0   930-1020   MTWTH  0212 AUDUBON                          ANDERSON P
+      ***   HEBR 2003  ***       CROSS-LISTED WITH   REL  2003
+ 20        HEBR 2003         1  INTERMEDIATE HEBREW    4.0   830-0920   MTWTH  0114 AUDUBON                          ANDERSON P
+
+
+
+
+Fall  2019   HEBREW

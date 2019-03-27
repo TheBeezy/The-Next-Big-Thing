@@ -1,0 +1,98 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+      ***   HSS  1000  ***       (SECTION 1-16 & 36-40)"FOR FRESHMEN PURSUING A HSS MAJOR"
+ 20        HSS  1000         1  INTRO TO RESEARCH      1.0   830-0920   M      0051 ALLEN
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        17  INTRO TO RESEARCH      1.0   830-0920   M      0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        36  INTRO TO RESEARCH      1.0   830-0920   M      0204 WOODIN HALL
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 19     1  HSS  1000         2  INTRO TO RESEARCH      1.0   930-1020   M      0123 ALLEN
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 14     6  HSS  1000        18  INTRO TO RESEARCH      1.0   930-1020   M      0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         3  INTRO TO RESEARCH      1.0  1030-1120   M      0235 LOCKETT
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 17     3  HSS  1000        19  INTRO TO RESEARCH      1.0  1030-1120   M      0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         4  INTRO TO RESEARCH      1.0  1130-1220   M      0253 HIMES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        20  INTRO TO RESEARCH      1.0  1130-1220   M      0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         9  INTRO TO RESEARCH      1.0   930-1020    T     0204 WOODIN HALL
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 14     6  HSS  1000        26  INTRO TO RESEARCH      1.0   930-1020    T     0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        37  INTRO TO RESEARCH      1.0   930-1020    T
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        10  INTRO TO RESEARCH      1.0  1030-1120    T     0134 LOCKETT
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 18     2  HSS  1000        27  INTRO TO RESEARCH      1.0  1030-1120    T     0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        38  INTRO TO RESEARCH      1.0  1030-1120    T
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        11  INTRO TO RESEARCH      1.0  1130-1220    T     0155 COATES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        28  INTRO TO RESEARCH      1.0  1130-1220    T     0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000        12  INTRO TO RESEARCH      1.0  1230-0120    T     0111 COATES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        29  INTRO TO RESEARCH      1.0  1230-0120    T     0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000        13  INTRO TO RESEARCH      1.0   930-1020     W    0119 TUREAUD HALL
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        30  INTRO TO RESEARCH      1.0   930-1020     W    0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000        14  INTRO TO RESEARCH      1.0  1030-1120     W    0136 LOCKETT
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        31  INTRO TO RESEARCH      1.0  1030-1120     W    0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        15  INTRO TO RESEARCH      1.0  1130-1220     W    0253 HIMES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        32  INTRO TO RESEARCH      1.0  1130-1220     W    0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        39  INTRO TO RESEARCH      1.0  1130-1220     W    0035 ALLEN
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        16  INTRO TO RESEARCH      1.0  1230-0120     W    0225 TUREAUD HALL
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        33  INTRO TO RESEARCH      1.0  1230-0120     W    0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000        34  INTRO TO RESEARCH      1.0   130-0220     W    0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         5  INTRO TO RESEARCH      1.0   830-0920      TH  0239 LOCKETT
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        21  INTRO TO RESEARCH      1.0   830-0920      TH  0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         6  INTRO TO RESEARCH      1.0   930-1020      TH  0204 WOODIN HALL
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        22  INTRO TO RESEARCH      1.0   930-1020      TH  0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         7  INTRO TO RESEARCH      1.0  1030-1120      TH  0134 LOCKETT
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        23  INTRO TO RESEARCH      1.0  1030-1120      TH  0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+ 20        HSS  1000         8  INTRO TO RESEARCH      1.0  1130-1220      TH  0155 COATES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+ 20        HSS  1000        24  INTRO TO RESEARCH      1.0  1130-1220      TH  0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        35  INTRO TO RESEARCH      1.0  1200-1250      TH  0244 LOCKETT
+     **                    RESERVED FOR HSS ACADEMY
+ 20        HSS  1000        25  INTRO TO RESEARCH      1.0  1230-0120      TH  0115 RES COLL ONE N  RES COLG-GLOBAL
+     **                    Reserved for Humanities and Social Sciences Res College
+(H)        HSS  1000        40  INTRO TO RESEARCH      1.0  1230-0120      TH  0111 COATES
+     **                    FOR FRESHMEN PURSUING A HUMANITIES & SOCIAL SCIENCES MAJOR
+
+
+
+
+Fall  2019   HUMANITIES AND SOCIAL SCIENCES

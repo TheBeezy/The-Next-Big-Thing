@@ -1,0 +1,29 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 27     3  WGS  2200         1  GENDER & POP CULTURE   3.0   300-0420   M W    0051 ALLEN                            CAVA P
+ 18     2  WGS  2500         3  WOMEN'S & GENDER STU   3.0  1030-1120   M W F  0130 COATES                           CAVA P
+ 20        WGS  2500        11  WOMEN'S & GENDER STU   3.0  1030-1120   M W F                       RES COLG-HSE
+     **                    Reserved for Human Sciences & Education Res College
+ 39     1  WGS  2500         4  WOMEN'S & GENDER STU   3.0  1130-1220   M W F  0019 ALLEN                            CAVA P
+ 40        WGS  2500         5  WOMEN'S & GENDER STU   3.0   900-1020    T TH  0215 WILLIAMS
+ 39     1  WGS  2500         6  WOMEN'S & GENDER STU   3.0   900-1020    T TH  0103 COATES                           STEIB S
+ 37     3  WGS  2500         7  WOMEN'S & GENDER STU   3.0  1030-1150    T TH  0137 ALLEN                            MAYER-GARCIA
+ 39     1  WGS  2500         8  WOMEN'S & GENDER STU   3.0  1200-0120    T TH  0121 ALLEN                            JACQUET C
+ 38     2  WGS  2500         9  WOMEN'S & GENDER STU   3.0   130-0250    T TH  0116 LOCKETT                          RATHOUR A
+ 39     1  WGS  2500        10  WOMEN'S & GENDER STU   3.0   300-0420    T TH  0114 LOCKETT                          MAYER-GARCIA
+ 48    32  WGS  2500         1  WOMEN'S & GENDER STU   3.0  TBA                                     100% WEB BASED   BERKOWITZ D
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 74     6  WGS  2500         2  WOMEN'S & GENDER STU   3.0  TBA                                     100% WEB BASED   CAVA P
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 36     4  WGS  2900         1  GENDER, RACE, NATION   3.0  1230-0120   M W F  0103 COATES                           NICKLEN C
+ 40        WGS  2900         2  GENDER, RACE, NATION   3.0   130-0220   M W F  0234 COATES                           NICKLEN C
+ 18     2  WGS  3150         1  SURV FEMINIST THEORY   3.0   130-0250    T TH  0130 COATES                           KAHAN B
+ 13     2  WGS  4500         2  GLOBAL TRANS           3.0   130-0250   M W    0051 ALLEN                            CASTRO E
+ 14     1  WGS  4500         1  FEMALE FRIENDSHIPS     3.0   300-0420    T TH  0055 ALLEN                            JENSEN K
+  7     3  WGS  7150 RES     1  SEM FEM GENDER THRY    3.0   430-0720N    W    0128 ALLEN                            GOLDGABER D
+
+
+
+
+Fall  2019   WOMEN'S AND GENDER STUDIES
