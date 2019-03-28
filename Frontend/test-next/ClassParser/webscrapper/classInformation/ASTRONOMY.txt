@@ -1,0 +1,24 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+268     7  ASTR 1101         1  THE SOLAR SYSTEM       3.0   830-0920   M W F  0130 NICHOLSON
+266     9  ASTR 1101         2  THE SOLAR SYSTEM       3.0   130-0250    T TH  0130 NICHOLSON
+266     9  ASTR 1102         1  STELLAR ASTRONOMY      3.0  1230-0120   M W F  0130 NICHOLSON
+264    11  ASTR 1102         2  STELLAR ASTRONOMY      3.0   900-1020    T TH  0130 NICHOLSON
+ 22     3  ASTR 1108 LAB     1  ASTRONOMY LAB          1.0   700-0950N  M      0365 NICHOLSON
+ 24     1  ASTR 1108 LAB     2  ASTRONOMY LAB          1.0   700-0950N   T     0365 NICHOLSON
+ 22     3  ASTR 1109 LAB     1  ASTRONOMY LAB          1.0   700-0950N    W    0365 NICHOLSON
+ 24     1  ASTR 1109 LAB     2  ASTRONOMY LAB          1.0   700-0950N     TH  0365 NICHOLSON
+ 24     1  ASTR 1401         1  PLANETARY ASTROPHYS    3.0  1230-0120   M W F  0109 NICHOLSON
+ 14     1  ASTR 4261         1  MOD OBSERVATIONAL T    3.0   230-0320       F  0118 NICHOLSON
+                     LAB                                     730-1020N  M W
+ 14     1  ASTR 4750         1  SP TOP OBSERVTN ASTR   3.0   130-0250    T TH  0118 NICHOLSON
+      ***   ASTR 7741  ***       CROSS-LISTED WITH   PHYS 7741
+ 25        ASTR 7741         1  STELLAR ASTROPHYSICS   3.0  1130-1220   M W F  0106 NICHOLSON
+      ***   ASTR 7777  ***       CROSS-LISTED WITH   PHYS 7777
+ 15        ASTR 7777 SEM     1  SEM: ASTR & ASTROPHY   1-6  1200-0120    T     0262 NICHOLSON
+
+
+
+
+Fall  2019   ASTRONOMY

@@ -1,0 +1,21 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 20        BASC 2010 LAB     1  INQ MATH & SCI TEACH   1.0   900-1020    T     0205 PRESCOTT        CI-SPOKEN        BESSON S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 18     2  BASC 2010 LAB     2  INQ MATH & SCI TEACH   1.0  1030-1150    T     0136 PRESCOTT        CI-SPOKEN        DUHON C
+     **                    REQUIRED TO ALSO ENROLL IN BASC 2011 SECTION 2
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(H)        BASC 2010 LAB     4  INQ MATH & SCI TEACH   1.0   330-0450     W    0205 PRESCOTT        CI-SPOKEN        BESSON S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 19     1  BASC 2010 LAB     3  INQ MATH & SCI TEACH   1.0   130-0250      TH  0205 PRESCOTT        CI-SPOKEN        BESSON S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 25        BASC 2011 LAB     1  INQUIRY BASED MATH &   1.0   900-1020      TH  0136 PRESCOTT                         DUHON C
+ 28     2  BASC 2011 LAB     2  INQUIRY BASED MATH &   1.0  1030-1150      TH  0136 PRESCOTT                         DUHON C
+     **                    REQUIRED TO ALSO ENROLL IN BASC 2010 SECTION 2
+ 29     1  BASC 7000 SEM     1  INSTR COL LFE SCI LA   1.0   600-0750N  M      0206 WILLIAMS                         WISCHUSEN E
+
+
+
+
+Fall  2019   BASIC SCIENCES

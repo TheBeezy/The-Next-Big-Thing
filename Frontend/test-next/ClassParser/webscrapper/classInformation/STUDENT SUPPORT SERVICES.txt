@@ -1,0 +1,28 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 20        SSS  1001         1  SSS SUCCS STRATEGY     2.0  1030-1120   M      0211 TUREAUD HALL    PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1030-1120     W                                          ROBIDEAUX R
+     **                    SSS MEMBERS ONLY. INFO ON PROGRAM AT HTTPS://WWW.LSU.EDU/SSS
+     **                    INCOMING FRESHMEN ONLY
+(H)        SSS  1001         2  SSS SUCCS STRATEGY     2.0  1030-1120   M      0211 TUREAUD HALL    PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1030-1120     W                                          MARANTO N
+     **                    SSS MEMBERS ONLY. INFO ON PROGRAM AT HTTPS://WWW.LSU.EDU/SSS
+     **                    INCOMING FRESHMEN ONLY
+ 20        SSS  1001         3  SSS SUCCS STRATEGY     2.0  1030-1120   M      0211 TUREAUD HALL    PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1030-1120       F                                        ROBIDEAUX R
+     **                    SSS MEMBERS ONLY. INFO ON PROGRAM AT HTTPS://WWW.LSU.EDU/SSS
+     **                    INCOMING FRESHMEN ONLY
+(H)        SSS  1001         4  SSS SUCCS STRATEGY     2.0  1130-1220   M      0035 ALLEN           PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1130-1220     W                                          ROBIDEAUX R
+     **                    SSS MEMBERS ONLY. INFO ON PROGRAM AT HTTPS://WWW.LSU.EDU/SSS
+     **                    INCOMING FRESHMEN ONLY
+ 20        SSS  1001         5  SSS SUCCS STRATEGY     2.0  1130-1220   M      0035 ALLEN           PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1130-1220     W                                          MARANTO N
+     **                    SSS MEMBERS ONLY. INFO ON PROGRAM AT HTTPS://WWW.LSU.EDU/SSS
+     **                    NON FRESHMAN STUDENTS ONLY
+
+
+
+
+Fall  2019   STUDENT SUPPORT SERVICES

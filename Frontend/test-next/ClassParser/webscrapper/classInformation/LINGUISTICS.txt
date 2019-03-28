@@ -1,0 +1,43 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   LING 2010  ***       CROSS-LISTED WITH   PHIL 2010
+  5        LING 2010         1  SYMBOLIC LOGIC I       3.0  1030-1150    T TH  0109 COATES                           ROLAND J
+      ***   LING 2050  ***       CROSS-LISTED WITH   COMD 2050
+  4     1  LING 2050         2  INTR TO LANGUAGE       3.0  1200-0120    T TH  0026 HATCHER HALL                     MAZUMDAR B
+      ***   LING 2710  ***       CROSS-LISTED WITH   ENGL 2710
+ 16     1  LING 2710         1  DESCRIPTVE GRAM ENGL   3.0  1030-1150    T TH  0051 ALLEN                            SMITH J
+      ***   LING 2716  ***       CROSS-LISTED WITH   ENGL 2716
+ 17        LING 2716         1  LANGUAGE DIVERSITY     3.0  1230-0120   M W F  0015 ATKINSON                         SHPORT I
+      ***   LING 3080  ***       CROSS-LISTED WITH   FREN 3080
+  5        LING 3080         1  FR CULTURE & CIVILIZ   3.0   130-0250   M W    0127 COATES                           ANSELMO F
+      ***   LING 3150  ***       CROSS-LISTED WITH   COMD 3150
+  4     1  LING 3150         1  PHONETICS              3.0   900-1020    T TH  0026 HATCHER HALL                     GIBSON T
+      ***   LING 3716  ***       CROSS-LISTED WITH   ENGL 3716
+ 15     2  LING 3716         1  DIALECTS OF ENGLISH    3.0  1230-0120   M W F  0019 ALLEN                            JOHNSON G
+      ***   LING 4005  ***       CROSS-LISTED WITH   SPAN 4005
+  2        LING 4005         1  STRUCT OF SPAN LANG    3.0   230-0320   M W F  0035 ALLEN                            OROZCO R
+      ***   LING 4010  ***       CROSS-LISTED WITH   PHIL 4010
+  5        LING 4010         1  SYMBOLIC LOGIC II      3.0   300-0420    T TH  0034 ALLEN                            ROLAND J
+      ***   LING 4014  ***       CROSS-LISTED WITH   FREN 4014
+  5        LING 4014         1  INTRO FREN LINGUI      3.0  1030-1150    T TH  0436 HODGES HALL                      DUBOIS S
+      ***   LING 4060  ***       CROSS-LISTED WITH   ANTH 4060
+  8     2  LING 4060         1  LANGUAGE AND CULTURE   3.0  1030-1120   M W F  0245 HOWE RUSSELL E                   BRODY M
+      ***   LING 4153  ***       CROSS-LISTED WITH   COMD 4153
+  5        LING 4153         1  ACOUSTICS SP HEARING   4.0  1030-1150    T TH  0203 TUREAUD HALL                     KIM Y
+                     LAB                                     330-0520   M                                            THOMPSON A
+      ***   LING 4602  ***       CROSS-LISTED WITH   SPAN 4602
+  1        LING 4602         1  SPANISH PHONETICS      3.0   130-0250    T TH  0118 PRESCOTT                         KING J
+      ***   LING 4710  ***       CROSS-LISTED WITH   ENGL 4710
+  9     1  LING 4710         1  INTR TO LINGUISTICS    3.0   130-0220   M W F  0015 ATKINSON                         SHPORT I
+      ***   LING 4712  ***       CROSS-LISTED WITH   ENGL 4712
+ 10        LING 4712         1  ROOTS OF ENGLISH       3.0   900-1020    T TH  0267 WOODIN HALL                      CAMP A
+      ***   LING 4715  ***       CROSS-LISTED WITH   ENGL 4715
+  9     1  LING 4715         1  SEMANTICS              3.0   130-0250    T TH  0269 WOODIN HALL                      JOHNSON G
+      ***   LING 7750  ***       CROSS-LISTED WITH   COMD 7750
+  2        LING 7750 SEM     1  SPECIAL TOP LINGUIST   3.0  TBA                                                      GIBSON T
+
+
+
+
+Fall  2019   LINGUISTICS

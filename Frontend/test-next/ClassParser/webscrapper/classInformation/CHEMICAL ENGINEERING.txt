@@ -1,0 +1,97 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+216     4  CHE  1100         1  INTRO CHEM ENGINEER    1.0   430-0520N  M      1100 PATRICK TAYLOR
+ 48     2  CHE  2171         1  CHE FUND MAT EN BAL    4.0   930-1020   M W F  0103 TUREAUD HALL
+                     LAB                                     130-0420   M
+ 49     1  CHE  2171         2  CHE FUND MAT EN BAL    4.0   930-1020   M W F  0103 TUREAUD HALL
+                     LAB                                     130-0420    T
+ 40    10  CHE  2171         3  CHE FUND MAT EN BAL    4.0  1030-1120   M W F  0103 TUREAUD HALL
+                     LAB                                     130-0420   M
+ 40    10  CHE  2171         4  CHE FUND MAT EN BAL    4.0  1030-1120   M W F  0103 TUREAUD HALL
+                     LAB                                     130-0420    T
+111     9  CHE  2172         1  CHE THERMODYNAMICS     3.0   930-1020   M W F  1200 PATRICK TAYLOR
+ 41     3  CHE  2176         1  NUM METH & PROG CHE    4.0  1030-1150   M W    0054 ALLEN
+                     LAB                                     130-0420     W
+ 42     2  CHE  2176         2  NUM METH & PROG CHE    4.0  1030-1150   M W    0054 ALLEN
+                     LAB                                     130-0420      TH
+216     9  CHE  3101         1  MOMENTUM TRANSFER      3.0   830-0920   M W F  0130 HOWE RUSSELL E
+ 79     1  CHE  3102         1  HEAT/MASS TRANSFER     4.0   830-1020   M W    1245 PATRICK TAYLOR
+  6     1  CHE  3104         1  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420   M
+  7        CHE  3104         2  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420   M
+  7        CHE  3104         3  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420   M
+  7        CHE  3104         4  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420    T
+  7        CHE  3104         5  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420    T
+  7        CHE  3104         6  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420    T
+  7        CHE  3104         7  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420     W
+  7        CHE  3104         8  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420     W
+  7        CHE  3104         9  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0112 TUREAUD HALL
+                     LAB                                     130-0420     W
+ 63     1  CHE  3171         1  INTRO DES PROC SFTY    3.0  1200-0120    T TH  1236 PATRICK TAYLOR
+ 79     1  CHE  3173         1  HETEROGENUS EQULBRUM   3.0  1030-1120   M W F  1253 PATRICK TAYLOR
+134     6  CHE  3190         1  CHEM REACTION ENGR     3.0  1030-1120   M W F  1100 PATRICK TAYLOR
+  9     1  CHE  3900 IND     1  IND RESEARCH I         3.0  TBA
+ 99        CHE  3900 IND     2  IND RESEARCH I         3.0  TBA
+ 99        CHE  3900 IND     3  IND RESEARCH I         3.0  TBA
+ 61     9  CHE  4151         1  UNIT OPS DESIGN        4.0   830-0920   M W F  1263 PATRICK TAYLOR
+                     LAB                                     900-1020    T TH
+ 67     3  CHE  4151         2  UNIT OPS DESIGN        4.0   830-0920   M W F  1263 PATRICK TAYLOR
+                     LAB                                    1030-1150    T TH
+  5     4  CHE  4162         1  UNIT OPERATIONS LAB    3.0   430-0520N  M      0226 TUREAUD HALL
+                     LAB                                     130-0420   M W
+  9        CHE  4162         2  UNIT OPERATIONS LAB    3.0   430-0520N  M      0225 TUREAUD HALL
+                     LAB                                     130-0420   M W
+  1     8  CHE  4162         3  UNIT OPERATIONS LAB    3.0   430-0520N  M      1218 PATRICK TAYLOR
+                     LAB                                     130-0420   M W
+  7     2  CHE  4162         4  UNIT OPERATIONS LAB    3.0   430-0520N  M      1120 BUS ED S WING
+                     LAB                                     130-0420   M W
+  8     1  CHE  4162         5  UNIT OPERATIONS LAB    3.0   430-0520N   T     1305 BUS ED S WING
+                     LAB                                     130-0420    T TH
+  8     1  CHE  4162         6  UNIT OPERATIONS LAB    3.0   430-0520N   T     1225 BUS ED S WING
+                     LAB                                     130-0420    T TH
+  9        CHE  4162         7  UNIT OPERATIONS LAB    3.0   430-0520N   T     1120 BUS ED S WING
+                     LAB                                     130-0420    T TH
+  9        CHE  4162         8  UNIT OPERATIONS LAB    3.0   430-0520N   T     1409 BUS ED S WING
+                     LAB                                     130-0420    T TH
+141     8  CHE  4198         1  PROCESS DYNAMICS       3.0  1130-1220   M W F  1200 PATRICK TAYLOR
+ 24     6  CHE  4210         1  INDUSTRL CATALYSIS     3.0  1230-0120   M W F  1745 BUS ED N WING
+ 46    14  CHE  4220         1  GENETIC ENGINEERING    3.0   130-0250    T TH  1221 PATRICK TAYLOR
+ 10        CHE  4221 LAB     1  CHE PROJECT I          1.0  TBA
+ 29     1  CHE  4285         1  PRIN HIGH POLYMERS     3.0  1030-1150    T TH  1216 PATRICK TAYLOR
+ 15        CHE  4410         1  SP TOP IN CHE DESIGN   3.0   130-0320       F  1216 PATRICK TAYLOR
+ 25        CHE  7110         1  MATHEMAT MODELS CHE    3.0   500-0620N  M W    1325 BUS ED S WING
+ 25        CHE  7120         1  CHE THERMODYNAMICS     3.0  1030-1150    T TH  0215 TUREAUD HALL
+ 25        CHE  7130         1  HEAT MASS TRANSPORT    3.0   330-0450    T TH  0108 TUREAUD HALL
+ 25        CHE  7700         2  ADV TOPICS IN CHE      3.0   130-0250   M W    1218 PATRICK TAYLOR
+ 25        CHE  7700         1  ADV TOPICS IN CHE      3.0  1200-0120    T TH  1218 PATRICK TAYLOR                   MCPEAK K
+ 88        CHE  7800 SEM     1  SEMINAR                1.0   200-0250       F  1225 PATRICK TAYLOR
+ 99        CHE  9000 RES     1  DISSERTATION RES       1-12 TBA                                                      ARGES C
+ 99        CHE  9000 RES     2  DISSERTATION RES       1-12 TBA                                                      BENTON M
+ 99        CHE  9000 RES     3  DISSERTATION RES       1-12 TBA                                                      DOOLEY K
+ 99        CHE  9000 RES     4  DISSERTATION RES       1-12 TBA                                                      DORMAN J
+ 99        CHE  9000 RES     5  DISSERTATION RES       1-12 TBA                                                      FLAKE J
+ 99        CHE  9000 RES     6  DISSERTATION RES       1-12 TBA                                                      GRIFFIN G
+ 99        CHE  9000 RES     7  DISSERTATION RES       1-12 TBA                                                      KNOPF F
+ 99        CHE  9000 RES     8  DISSERTATION RES       1-12 TBA                                                      MCPEAK K
+ 99        CHE  9000 RES     9  DISSERTATION RES       1-12 TBA                                                      MELVIN A
+ 99        CHE  9000 RES    10  DISSERTATION RES       1-12 TBA                                                      NANDAKUMAR K
+ 99        CHE  9000 RES    11  DISSERTATION RES       1-12 TBA                                                      ROMAGNOLI J
+ 99        CHE  9000 RES    12  DISSERTATION RES       1-12 TBA                                                      SPIVEY J
+ 99        CHE  9000 RES    13  DISSERTATION RES       1-12 TBA                                                      SHELTON W
+ 99        CHE  9000 RES    14  DISSERTATION RES       1-12 TBA                                                      WORNAT M
+ 99        CHE  9000 RES    15  DISSERTATION RES       1-12 TBA                                                      XU Y
+ 99        CHE  9000 RES    16  DISSERTATION RES       1-12 TBA                                                      BHARTI B
+ 99        CHE  9000 RES    17  DISSERTATION RES       1-12 TBA                                                      DING K
+
+
+
+
+Fall  2019   CHEMICAL ENGINEERING
