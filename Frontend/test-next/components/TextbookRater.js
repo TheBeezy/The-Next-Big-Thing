@@ -19,7 +19,7 @@ class TextbookRater extends React.Component {
   constructor(props) {
     super(props);
     // Holds the values for the text fields
-    this.state = { avgRating: 0.0,numRatings: 0,rating: 0.0};
+    this.state = { name: '', avgRating: 0.0, numRatings: 0, rating: 0.0 };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -40,36 +40,36 @@ class TextbookRater extends React.Component {
     // Stops the page from refreshing
     event.preventDefault();
     // Sets the data based on text fields
-	var textbook = db.collection('textbooks').doc('a').get().then(function(doc) {
-		if (doc.exists) {
-			console.log("Document data:", doc.data());
-			var dbNumRatings = parseFLoat(textbook.data().numRatings);
-			var dbAvgRating = parseFLoat(textbook.data().rating);
-			this.setState({
-				avgRating: (dbNumRatings*dbAvgRating+rating)/dbNumRatings
-			})
-		} else {
-			// doc.data() will be undefined in this case
-			console.log("No such document!");
-		}
-	}).catch(function(error) {
-		console.log("Error getting document:", error);
-	});
-    var setTextBookRating = db.collection('textbooks').doc('this.state.name').set({
-		name: this.state.name,
-        avgRating: this.state.avgRating,
-    })
-	
-  }
-  
-  handleOptionChange = changeEvent => {
-
-    this.setState({
-
-      selectedOption: changeEvent.target.value
-
+    var textbook = db.collection('textbooks').doc(this.state.name)
+    var getTextbook = textbook.get().then(doc => {
+      if (doc.exists) {
+        console.log("Document data:", doc.data());
+        var dbNumRatings = parseFloat(doc.data().numRatings);
+        var dbAvgRating = parseFloat(doc.data().rating);
+        this.setState({
+          avgRating: ((dbNumRatings * dbAvgRating) + parseFloat(this.state.rating)) / dbNumRatings+1
+        })
+      } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+      }
+    }).catch(function (error) {
+      console.log("Error getting document:", error);
     });
+    var setTextBookRating = db.collection('textbooks').doc(this.state.name).set({
+      name: this.state.name,
+      numRatings: this.state.numRatings,
+      avgRating: this.state.avgRating,
+    })
+  }
 
+  handleOptionChange = changeEvent => {
+    var val = changeEvent.target.value;
+    this.setState({
+      selectedOption: val,
+      rating: val,
+    });
+    console.log(this.state.rating)
   };
 
   // Form for submitting information (note the names)
@@ -84,44 +84,44 @@ class TextbookRater extends React.Component {
               type="text"
               onChange={this.handleInputChange} />
           </label>
-		  <label>
+          <label>
             Rating:
-			  <br/>
-              <input
+			  <br />
+            <input
               name="rating"
               type="radio"
-			  value="option1"
-			  checked={this.state.selectedOption === "option1"}
-			  onChange={this.handleOptionChange} /> 1
-			  <br/>
-			  <input
+              value="1"
+              checked={this.state.selectedOption === "1"}
+              onChange={this.handleOptionChange} /> 1
+			  <br />
+            <input
               name="rating"
               type="radio"
-			  value="option2"
-			  checked={this.state.selectedOption === "option2"}
-			  onChange={this.handleOptionChange} /> 2
-			  <br/> 
-			  <input
+              value="2"
+              checked={this.state.selectedOption === "2"}
+              onChange={this.handleOptionChange} /> 2
+			  <br />
+            <input
               name="rating"
               type="radio"
-			  value="option3"
-			  checked={this.state.selectedOption === "option3"}
-			  onChange={this.handleOptionChange} /> 3
-			  <br/> 
-			  <input
+              value="3"
+              checked={this.state.selectedOption === "3"}
+              onChange={this.handleOptionChange} /> 3
+			  <br />
+            <input
               name="rating"
               type="radio"
-			  value="option4"
-			  checked={this.state.selectedOption === "option4"}
-			  onChange={this.handleOptionChange} /> 4
-			  <br/> 
-			  <input
+              value="4"
+              checked={this.state.selectedOption === "4"}
+              onChange={this.handleOptionChange} /> 4
+			  <br />
+            <input
               name="rating"
               type="radio"
-			  value="option5"
-			  checked={this.state.selectedOption === "option5"}
-			  onChange={this.handleOptionChange} /> 5
-			  <br/>
+              value="5"
+              checked={this.state.selectedOption === "5"}
+              onChange={this.handleOptionChange} /> 5
+			  <br />
           </label>
           <input type="submit" value="Submit" />
         </form>
