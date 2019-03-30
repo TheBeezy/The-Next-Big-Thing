@@ -1,4 +1,5 @@
 import Layout from '../components/Layout.js'
+import Search from '../components/Search.js'
 import Link from 'next/link'
 import Fetch from 'isomorphic-unfetch'
 
@@ -9,8 +10,7 @@ export default () => (
             <title>Home</title>
         </head>
         <p>
-            <button name="Search">Search</button>
-            <input type="text" size="100"></input>
+            <Search />
         </p>
         <style jsx>{`
             h1, a {
