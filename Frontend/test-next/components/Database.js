@@ -4,7 +4,7 @@ import data from '../FireBaseConfig.json'
 // CSS Styling
 const boxStyle = {
   width: '150px',
-  margin: '1',
+  fontSize: '12pt',
 };
 
 // Initalizes firebase only once using the firebase config file
