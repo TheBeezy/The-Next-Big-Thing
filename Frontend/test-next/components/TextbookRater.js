@@ -3,7 +3,7 @@ import data from '../FireBaseConfig.json'
 
 // CSS Styling
 const boxStyle = {
-  width: '150px',
+  width: '250px',
   margin: '1',
 };
 
@@ -18,9 +18,10 @@ var db = firebase.firestore();
 class TextbookRater extends React.Component {
   constructor(props) {
     super(props);
-    // Holds the values for the text fields
-    this.state = { name: '', avgRating: 0.0, numRatings: 0, rating: 0.0 };
+    // Holds values
+    this.state = { selectedOption:'', name: '', avgRating: 0.0, numRatings: 0, rating: 0.0 };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleOptionChange = this.handleOptionChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -43,11 +44,16 @@ class TextbookRater extends React.Component {
     var textbook = db.collection('textbooks').doc(this.state.name)
     var getTextbook = textbook.get().then(doc => {
       if (doc.exists) {
-        console.log("Document data:", doc.data());
         var dbNumRatings = parseFloat(doc.data().numRatings);
-        var dbAvgRating = parseFloat(doc.data().rating);
+        var dbAvgRating = parseFloat(doc.data().avgRating);
         this.setState({
-          avgRating: ((dbNumRatings * dbAvgRating) + parseFloat(this.state.rating)) / dbNumRatings+1
+          numRatings: dbNumRatings,
+          avgRating: (((dbNumRatings * dbAvgRating) + this.state.rating) / (dbNumRatings+1))
+        })
+        var setTextBookRating = db.collection('textbooks').doc(this.state.name).set({
+          name: this.state.name,
+          numRatings: this.state.numRatings+1,
+          avgRating: this.state.avgRating,
         })
       } else {
         // doc.data() will be undefined in this case
@@ -56,20 +62,13 @@ class TextbookRater extends React.Component {
     }).catch(function (error) {
       console.log("Error getting document:", error);
     });
-    var setTextBookRating = db.collection('textbooks').doc(this.state.name).set({
-      name: this.state.name,
-      numRatings: this.state.numRatings,
-      avgRating: this.state.avgRating,
-    })
   }
 
-  handleOptionChange = changeEvent => {
-    var val = changeEvent.target.value;
+  handleOptionChange(changeEvent) {
     this.setState({
-      selectedOption: val,
-      rating: val,
+      selectedOption: changeEvent.target.value,
+      rating: parseFloat(changeEvent.target.value),
     });
-    console.log(this.state.rating)
   };
 
   // Form for submitting information (note the names)
@@ -86,42 +85,36 @@ class TextbookRater extends React.Component {
           </label>
           <label>
             Rating:
-			  <br />
             <input
               name="rating"
               type="radio"
               value="1"
               checked={this.state.selectedOption === "1"}
               onChange={this.handleOptionChange} /> 1
-			  <br />
             <input
               name="rating"
               type="radio"
               value="2"
               checked={this.state.selectedOption === "2"}
               onChange={this.handleOptionChange} /> 2
-			  <br />
             <input
               name="rating"
               type="radio"
               value="3"
               checked={this.state.selectedOption === "3"}
               onChange={this.handleOptionChange} /> 3
-			  <br />
             <input
               name="rating"
               type="radio"
               value="4"
               checked={this.state.selectedOption === "4"}
               onChange={this.handleOptionChange} /> 4
-			  <br />
             <input
               name="rating"
               type="radio"
               value="5"
               checked={this.state.selectedOption === "5"}
               onChange={this.handleOptionChange} /> 5
-			  <br />
           </label>
           <input type="submit" value="Submit" />
         </form>
