@@ -21,6 +21,9 @@ export default () => (
 					<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 				</a>
 			</div>
+			<form action="/editUserPage">
+				<input type="submit" value="Edit Profile Page" />
+			</form>
 		</body>
 		<footer id="userfooter">
 			<p>Contact us!</p>
