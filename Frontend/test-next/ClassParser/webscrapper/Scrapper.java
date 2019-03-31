@@ -17,10 +17,13 @@ class Scrap {
 
 	//Name of the departments
 	final List<String> department = new ArrayList<>();
+	final List<String> departmentsFound = new ArrayList<>();
 
 	//File name that contains the department names
 	private String departmentFileName;
 	
+	private String listOfDepartmentClassesFound = "classesFound2019.txt";
+
 	public Scrap(String url, String departmentFileName) {
 		this.url = url;
 		this.departmentFileName = departmentFileName;
@@ -49,8 +52,10 @@ class Scrap {
 					String classInformation = text.text();
 					System.out.println(department.get(i) + " successfully written!");
 					createDepartmentFile(classInformation, department.get(i));				
+					departmentsFound.add(department.get(i).trim() + ".txt");
 				}
 			}
+			writeDepartmentsFound();
 		} catch(Exception ex) {
 			ex.printStackTrace();
 		} 
@@ -60,6 +65,15 @@ class Scrap {
 	private void createDepartmentFile(String classInformation, String department) throws IOException {
 		try(BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/austinlee/Desktop/ClassParser/webscrapper/classInformation/"+ department.trim() + ".txt"))) {
 			writer.write(classInformation);	
+		}
+	}
+
+	private void writeDepartmentsFound() throws IOException {
+		try(BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/austinlee/Desktop/ClassParser/" + listOfDepartmentClassesFound))) {
+			for(String str : departmentsFound) {
+				writer.write(str + "\r\n");
+			}
+
 		}
 	}
 
