@@ -1,6 +1,20 @@
 import Layout from '../components/Layout'
 import UserpageOptions from '../components/UserpageOptions'
 
+
+const userStyle = {
+    fontFamily: 'Verdana',
+}
+
+const userBodyStyle = {
+	fontFamily: 'Verdana',
+	textAlign: 'left'
+}
+
+
+
+
+
 export default () => (
     <Layout>
 		<html>
@@ -10,19 +24,13 @@ export default () => (
 			</title>
 		</head>
 		<body>
-			<h1>Thank you for using Bookmill!</h1>
-			<div>
+			<div style={userBodyStyle}>
 				<UserpageOptions/>
 			</div>
 			<br/>
 			<br/>
 			<br/>
 		</body>
-		<footer id="userfooter">
-			<div>
-				<a href="/about">Contact us!</a>
-			</div>
-		</footer>
 		</html>
     </Layout>
 )

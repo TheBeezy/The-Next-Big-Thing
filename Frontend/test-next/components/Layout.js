@@ -1,4 +1,5 @@
 import Header from './Header'
+import Footer from './Footer'
 
 // CSS Styling
 const layoutStyle = {
@@ -9,6 +10,7 @@ const layoutStyle = {
 const h1Style = {
     fontSize: '20pt',
     fontFamily: 'Arial',
+	textAlign: 'center'
 }
 
 const Layout = (props) => (
@@ -16,6 +18,7 @@ const Layout = (props) => (
         <div style = {h1Style}><h1> Bookmill </h1></div>
         <Header/>
         {props.children}
+		<Footer/>
     </div>
 )
 

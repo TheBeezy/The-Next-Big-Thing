@@ -8,6 +8,7 @@ const linkStyle = {
     marginLeft: '3%',
 }
 const headerStyle = {
+	textAlign: 'center',
     marginLeft: '5%',
     marginRight: '5%',
 }
