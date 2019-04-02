@@ -14,7 +14,7 @@ def getTermElement():
 	termButton = booklist.find_element_by_class_name('selectBoxDropdownLink')
 	return termButton
 
-Gets the department, class number, and section and is returned as a list
+#Gets the department, class number, and section and is returned as a list
 def getClasses():
 	classes = []
 	driver.get(url);
@@ -140,12 +140,12 @@ classes = [line.rstrip('\n') for line in open('textbook.txt')]
 classList = []
 
 time1 = time.time()
-counter = 1
+counter = 2190
 total = len(classes)
 file = open('updatedtextbook.txt', 'a')
 #Gets the textbooks and writes in a txt file
-for i in classes:
-	textbook = getBooks(i.split(' '))
+for i in range(2189, len(classes)):
+	textbook = getBooks(classes[i].split(' '))
 	for list in textbook:
 		for info in list:
 			file.write(info + ' ')
@@ -154,3 +154,13 @@ for i in classes:
 	print('Time elapsed: %f, Completed: %d / %d' %(((time.time() - time1) / 60), counter, total))
 	counter = counter + 1
 file.close()
+#for i in classes:
+#	textbook = getBooks(i.split(' '))
+#	for list in textbook:
+#		for info in list:
+#			file.write(info + ' ')
+#		
+#	file.write('\n')
+#	print('Time elapsed: %f, Completed: %d / %d' %(((time.time() - time1) / 60), counter, total))
+#	counter = counter + 1
+#file.close()
