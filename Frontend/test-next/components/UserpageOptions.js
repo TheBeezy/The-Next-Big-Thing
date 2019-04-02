@@ -2,7 +2,7 @@ class UserpageOptions extends React.Component {
 	
 	state = {
 		standardMsg: 'Awaiting Response...',
-		response : 'oof',
+		response : '',
 		affirmativeResponse: '',
 		negativeResponse: ''
 	}
@@ -34,7 +34,7 @@ class UserpageOptions extends React.Component {
 					</select>
 				</form>
 				<div>
-					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/MeetingSchedule">{this.state.negativeResponse}</a></p>
+					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/editUserpage">{this.state.negativeResponse}</a></p>
 				</div>
 				<br/>
 				<br/>
