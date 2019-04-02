@@ -19,11 +19,6 @@ const Header = () => (
                 Home
             </a>
         </Link>
-	    <Link href="/about">
-            <a style={linkStyle}>
-                About
-            </a>
-	    </Link>
     	<Link href="/MeetingSchedule">
             <a style={linkStyle}>
                 Schedule
@@ -37,12 +32,7 @@ const Header = () => (
         </Link>
         <Link href="/reviewpage">
             <a style={linkStyle}>
-            Review Page
-            </a>
-        </Link>
-        <Link href="/database-example">
-            <a style={linkStyle}>
-                Database Entry
+                Review Page
             </a>
         </Link>
         <Link href="/signin">
@@ -50,6 +40,11 @@ const Header = () => (
                 Sign In
             </a>
         </Link>
+	    <Link href="/about">
+            <a style={linkStyle}>
+                About
+            </a>
+	    </Link>
     </div>
 )
 
