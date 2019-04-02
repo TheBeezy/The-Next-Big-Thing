@@ -4,7 +4,10 @@ class UserpageOptions extends React.Component {
 		standardMsg: 'Awaiting Response...',
 		response : '',
 		affirmativeResponse: '',
-		negativeResponse: ''
+		negativeResponse: '',
+		affirmativeVisible: 'hidden',
+		negativeVisible: 'hidden',
+		
 	}
 	
 	

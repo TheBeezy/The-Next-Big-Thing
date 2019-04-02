@@ -13,13 +13,19 @@ export default () => (
 			<div>
 				<form>
 				  First name:
-				  <input type="text" name="firstname" placeholder="Mickey"></input>
+				  <input type="text" placeholder="Mickey"></input>
 				  <br/>
 				  <br/>
 				  Last name:
-				  <input type="text" name="lastname" placeholder="Mouse"></input>
+				  <input type="text" placeholder="Mouse"></input>
 				  <br/>
 				  <br/>
+				  Description:
+				  <input type="text" placeholder="Describe yourself and what someone should expect in a transaction"></input>
+				  <br/>
+				  <br/>
+				  email:
+				  <input type="email" placeholder = 'user@domain.xxx'></input>
 				  <input type="submit" value="Submit"></input>
 				</form> 
 			</div>
