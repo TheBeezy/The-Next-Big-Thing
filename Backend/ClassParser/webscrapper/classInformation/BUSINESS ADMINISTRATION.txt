@@ -1,0 +1,52 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+  4     1  BADM 7000 CLI     1  INTERNSHIP IN BADM     3.0  TBA                                     PERMIS OF INST
+  7     9  BADM 7050         1  INFOR SYST MBA STDNT   3.0  TBA                                     PERMIS OF INST   HIRSCHHEIM R
+     **                    RESERVED FOR EMBA STUDENTS ONLY
+  7    43  BADM 7060         2  ELEMENTS OF COST MGT   3.0   900-1150     W    1220 BUS ED S WING   PERMIS OF INST   DENSTEL C
+     **                    RESERVED FOR MBA STUDENTS ONLY
+  7     9  BADM 7060         1  ELEMENTS OF COST MGT   3.0   800-1150       FS 1321 BUS ED S WING   PERMIS OF INST   DENSTEL C
+     **                    RESERVED FOR EMBA STUDENTS ONLY
+  7    43  BADM 7090         1  FIN MANAGEMENT         3.0   900-1150   M      1321 BUS ED S WING   PERMIS OF INST   CHANCE D
+     **                    RESERVED FOR MBA STUDENTS ONLY
+  9    31  BADM 7090         3  FIN MANAGEMENT         3.0   600-0850N   T     1321 BUS ED S WING   PERMIS OF INST   NARAYANAN R
+     **                    RESERVED FOR PMBA STUDENTS ONLY
+  6     9  BADM 7090         2  FIN MANAGEMENT         3.0  1200-0450       F  1321 BUS ED S WING   PERMIS OF INST   NARAYANAN R
+     **                    RESERVED FOR EMBA STUDENTS ONLY
+  6     9  BADM 7100         1  MKT MANAGEMENT         3.0  TBA                                     PERMIS OF INST   WU J
+     **                    RESERVED FOR EMBS STUDENTS ONLY
+  5    45  BADM 7120         1  OPERATIONS MANAGEMNT   3.0   900-1150    T     1220 BUS ED S WING   PERMIS OF INST   KELLE P
+     **                    RESERVED FOR MBA STUDENTS ONLY
+  8    32  BADM 7140         2  LEGAL ENVIR BUS I      3.0   600-0850N  M      1321 BUS ED S WING   PERMIS OF INST   FARGASON J
+     **                    RESERVED FOR PMBA STUDENTS ONLY
+  9    41  BADM 7140         1  LEGAL ENVIR BUS I      3.0   900-1150      TH  1321 BUS ED S WING   PERMIS OF INST   FARGASON J
+     **                    RESERVED FOR MBA STUDENTS ONLY
+  4    18  BADM 7160         1  NEGOTIATIONS           3.0  TBA                                     PERMIS OF INST   FARGASON J
+     **                    RESERVED FOR MBA STUDENTS ONLY
+ 24     6  BADM 7170         1  INTERNAT MGMT CHALL    3.0  TBA                                     PERMIS OF INST
+     **                    RESERVED FOR MBA STUDENTS ONLY - CHINA
+ 15    15  BADM 7170         2  INTERNAT MGMT CHALL    3.0  TBA                                     PERMIS OF INST   KORAY F
+                                                                                                                     CHUN Y
+     **                    RESERVED FOR MBA STUDENTS ONLY - PANAMA/PERU
+ 18    12  BADM 7170         3  INTERNAT MGMT CHALL    3.0  TBA                                     PERMIS OF INST
+     **                    RESERVED FOR MBA STUDENTS ONLY - SEATTLE/SILICON VALLEY
+ 10    40  BADM 7190         2  STRAT MANAGEMENT       3.0   900-1150    T     1321 BUS ED S WING   PERMIS OF INST   CASHEN L
+     **                    RESERVED FOR MBA STUDENTS ONLY
+ 11    29  BADM 7190         1  STRAT MANAGEMENT       3.0   600-0850N   T     1220 BUS ED S WING   PERMIS OF INST   CASHEN L
+     **                    RESERVED FOR PMBA STUDENTS ONLY
+ 17    13  BADM 7270 SEM     1  SEM NEW DEV BADM       3.0   600-0850N  M      1220 BUS ED S WING   PERMIS OF INST
+     **                    RESERVED FOR PMBA STUDENTS ONLY
+ 10    20  BADM 7270 SEM     2  SEM NEW DEV BADM       3.0   600-0850N  M      1305 BUS ED S WING   PERMIS OF INST   KARAM T
+     **                    RESERVED FOR MBA STUDENTS ONLY - SPORTS BUSINESS
+ 15        BADM 7460         1  SP TOP: ENTREPREN      1.5  TBA                                     PERMIS OF INST
+  5    10  BADM 7600         1  CONSULT FIELD PROJ     3.0   600-0850N     TH  2520 BUS ED AUDITORI PERMIS OF INST   LEMAIRE R
+  7    43  BADM 7010         1  EMERGING BUS ISSUES    1.0   100-0220   M      1220 BUS ED S WING   PERMIS OF INST   HART D
+     **                    RESERVED FOR MBA STUDENTS ONLY
+  7    43  BADM 7010         2  EMERGING BUS ISSUES    1.0   100-0220   M      1220 BUS ED S WING   PERMIS OF INST   THIBODEAUX S
+     **                    RESERVED FOR MBA STUDENTS ONLY
+
+
+
+
+Spring 2019   BUSINESS ADMINISTRATION

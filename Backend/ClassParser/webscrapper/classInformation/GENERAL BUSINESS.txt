@@ -1,0 +1,32 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    40  GBUS 3999         3  BUS COMM & PROF DEVL   1-3   500-0750N  M      1425 BUS ED S WING   CI-WRITTEN&SPOK  WOODS M
+     **                    COMMUNICATION & PROFESSIONAL DEVELOPMENT FOR BUSINESS
+     **                    STUDENTS. ENTER 3 CREDIT HOURS
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  7    33  GBUS 3999         5  MKT ANALYTICS          1-3   900-1020    T TH  0117 TUREAUD HALL                     LUND D
+     **                    MARKETING ANALYTICS. MAY APPLY AS MKT ELECTIVE FOR MKT
+     **                    MAJORS. ENTER 3 CREDIT HOURS.
+  2    38  GBUS 3999         6  MKT ANALYTICS          1-3  1030-1150    T TH  1425 BUS ED S WING                    LUND D
+     **                    MARKETING ANALYTICS. MAY APPLY AS MKT ELECTIVE FOR MKT
+     **                    MAJORS. ENTER 3 CREDIT HOURS.
+ 17     1  GBUS 3999         7  ADV SP TOPICS BUS      1-3   130-0250    T TH  0218 TUREAUD HALL                     DELZELL B
+     **                    BUSINESS FRENCH. PREREQUISITE IS FREN 2102 OR EQUIVALENT
+     **                    3 CREDIT HOURS
+(F)    40  GBUS 3999         2  BUS COMM & PROF DEVL   1-3   530-0820N   T     1225 BUS ED S WING   CI-WRITTEN&SPOK  THOMPSON M
+     **                    COMMUNICATION & PROFESSIONAL DEVELOPMENT FOR BUSINESS
+     **                    STUDENTS. ENTER 3 CREDIT HOURS
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  1    39  GBUS 3999         4  BUS COMM & PROF DEVL   1-3   430-0720N    W    1700 BUS ED N WING   CI-WRITTEN&SPOK  THIBODEAUX S
+     **                    COMMUNICATION & PROFESSIONAL DEVELOPMENT FOR BUSINESS
+     **                    STUDENTS. ENTER 3 CREDIT HOURS
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    15  GBUS 3999         1  INTL BUS SEMINAR       1-3  TBA                                                      CATANZARO J
+     **                    FOR STUDENTS PARTICIPATING IN INTERNATIONAL BUSINESS SEMINAR
+     **                    ABROAD ONLY. ENTER 3 CREDIT HOURS.
+
+
+
+
+Spring 2019   GENERAL BUSINESS
