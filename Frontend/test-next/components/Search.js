@@ -15,22 +15,28 @@ class Search extends React.Component {
 
     handleInputChange = () => {
         this.setState({
-            query: this.search.value
+            query: this.search.value,
+            results: [],
         }, () => {
             if(this.state.query && this.state.query.length > 0) {
-                console.log(this.state.query)
-                var tbQuery = db.collection('textbooks').doc(this.state.query)
+                var tbQuery = db.collection('textbooks').where('subject','==',this.state.query.toUpperCase())
+                if(this.state.query.split(" ").length > 1) {
+                    console.log(this.state.query.split(" ")[1]);
+                    var tbQuery = db.collection('textbooks').where("subject",'==',this.state.query.split(" ")[0]).where('class','==',this.state.query.split(" ")[1].toUpperCase())
+                }
                 var getDoc = tbQuery.get()
-                    .then(doc => {
-                        if (!doc.exists) {
-                            console.log('No such document!')
+                    .then(snapshot => {
+                        if (snapshot.empty) {
+                            console.log('No matching documents!')
                         } else {
-                            var docData = doc.data()
-                            this.setState(prevState => ({
-                                results: [...prevState.results,docData]
+                            snapshot.forEach(doc => {
+                                console.log(doc.id, '=>', doc.data());
+                                var docData = doc.data()
+                                this.setState(prevState => ({
+                                    results: [...prevState.results,docData]
                             }))
                             console.log('Document data:', this.state.results)
-                        }
+                        })}
                     })
                     .catch(err => {
                         console.log('Error getting document', err)
@@ -47,7 +53,7 @@ class Search extends React.Component {
         return (
             <form>
                 <input
-                    placeholder="Search for..."
+                    placeholder="Search by {Class} {Number}"
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
