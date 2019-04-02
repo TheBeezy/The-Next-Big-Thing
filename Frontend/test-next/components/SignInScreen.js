@@ -45,7 +45,6 @@ class SignInScreen extends React.Component {
   }
 
   render() {
-    
     if (!this.state.isSignedIn) {
       return (
         <Layout>
@@ -62,7 +61,7 @@ class SignInScreen extends React.Component {
       <div>
         <h1>BookMill</h1>
         <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
-        <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
+        <button onClick={() => firebase.auth().signOut()}>Sign-out</button>
       </div>
       </Layout>
     );

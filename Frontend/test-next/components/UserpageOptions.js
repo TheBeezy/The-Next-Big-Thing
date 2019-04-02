@@ -55,6 +55,7 @@ class UserpageOptions extends React.Component {
 		if (!this.state.isSignedIn) {
 			return(
 				<div>
+					<h1>Thank you for using Bookmill!</h1>
 					<div>
 						<h4>Please respond to the question to take you to the appropriate page.</h4>
 						<p>Are you currently a member of bookmill?</p>

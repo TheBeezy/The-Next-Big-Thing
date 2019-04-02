@@ -24,7 +24,6 @@ export default () => (
 			</title>
 		</head>
 		<body>
-			<h1 >Thank you for using Bookmill!</h1>
 			<div style={userBodyStyle}>
 				<UserpageOptions/>
 			</div>
