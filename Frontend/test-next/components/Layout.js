@@ -1,4 +1,5 @@
 import Header from './Header'
+import Footer from './Footer'
 
 // CSS Styling
 const layoutStyle = {
@@ -16,6 +17,7 @@ const Layout = (props) => (
         <div style = {h1Style}><h1> Bookmill </h1></div>
         <Header/>
         {props.children}
+		<Footer/>
     </div>
 )
 
