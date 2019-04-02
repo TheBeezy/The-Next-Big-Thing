@@ -1,5 +1,6 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
+import SearchResults from './SearchResults.js';
 
 // Initialize firebase
 if (!firebase.apps.length) {
@@ -8,6 +9,7 @@ if (!firebase.apps.length) {
 var db = firebase.firestore();
 
 class Search extends React.Component {
+    // Use the results to display a grid of textbook pages
     state = {
         query: '',
         results: [],
@@ -18,6 +20,7 @@ class Search extends React.Component {
             query: this.search.value,
             results: [],
         }, () => {
+            // Use search bar to get a query and log the results (not the prettiest, but it works)
             if(this.state.query && this.state.query.length > 0) {
                 var tbQuery = db.collection('textbooks').where('subject','==',this.state.query.toUpperCase())
                 if(this.state.query.split(" ").length > 1) {
@@ -58,6 +61,7 @@ class Search extends React.Component {
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
+                <SearchResults results={this.state.results}/>
             </form>
         )
     }
