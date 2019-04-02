@@ -1,16 +1,15 @@
 class UserpageOptions extends React.Component {
 	
 	state = {
-		response: 'Awaiting Response...',
-		responseAffirmative: '',
-		responseNegative: ''
+		standardMsg: 'Awaiting Response...',
+		response : 'oof'
 	}
-
 	
-
+	
+	
 	render() {
-		if (this.state.response === 'Continue to the'){
-			alert(document.getElementById('janedoe').selectedIndex)
+		if (this.state.standardMsg === 'Continue to the'){
+			alert(this.state.response);
 		}
 		return(
 			<div>
@@ -19,14 +18,14 @@ class UserpageOptions extends React.Component {
 					<p>Are you currently a member of bookmill?</p>
 				</div>
 				<form>
-					<select id = 'janedoe' onChange = {e => this.setState({response : 'Continue to the'})}>
+					<select onChange = {e => this.setState({standardMsg : 'Continue to the'})}>
 						<option selected hidden disabled> -- Select one of the following. --</option>
-						<option id = 'danejoe' value = "jeff">Yes</option>
-						<option value = "fred">No</option>
+						<option value = 'Sign-In Page'>Yes</option>
+						<option value = 'Registration Page'>No</option>
 					</select>
 				</form>
 				<div>
-					<p>{this.state.response} <a id="yesLink" href="/signin">{this.state.responseAffirmative}</a> <a id="noLink" href="/MeetingSchedule">{this.state.responseNegative}</a></p>
+					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.response}</a> <a id="noLink" href="/MeetingSchedule">{this.state.response}</a></p>
 				</div>
 				<br/>
 				<br/>
