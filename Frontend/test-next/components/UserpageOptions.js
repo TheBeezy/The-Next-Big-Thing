@@ -38,9 +38,7 @@ class UserpageOptions extends React.Component {
 	componentWillUnmount() {
 		this.unregisterAuthObserver();
 	}
-	
-	
-	
+
 	render() {
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Continue to the ',
@@ -52,6 +50,7 @@ class UserpageOptions extends React.Component {
 			this.state.negativeResponse = 'register!',
 			this.state.affirmativeResponse = ''
 		}
+		console.log(firebase.auth().currentUser);
 		if (!this.state.isSignedIn) {
 			return(
 				<div>
@@ -76,7 +75,11 @@ class UserpageOptions extends React.Component {
 			);
 		}	
 		return(
+		<div>
+			<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 			<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
+		</div>
+
 		);
 	}
 }
