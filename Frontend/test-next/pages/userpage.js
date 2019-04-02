@@ -8,7 +8,7 @@ const userStyle = {
 
 const userBodyStyle = {
 	fontFamily: 'Verdana',
-	textAlign: 'center'
+	textAlign: 'left'
 }
 
 

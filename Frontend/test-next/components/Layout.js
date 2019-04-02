@@ -10,6 +10,7 @@ const layoutStyle = {
 const h1Style = {
     fontSize: '20pt',
     fontFamily: 'Arial',
+	textAlign: 'center'
 }
 
 const Layout = (props) => (
