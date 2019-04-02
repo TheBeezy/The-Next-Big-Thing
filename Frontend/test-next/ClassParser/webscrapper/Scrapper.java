@@ -46,7 +46,7 @@ class Scrap {
 			final Document document = Jsoup.connect(url).get();
 			Document mainFrameSet = Jsoup.connect(document.select("frame[NAME = SEL]").first().absUrl("src")).get();
 			for(int i = 0; i < department.size(); i++) {
-				Document update = Jsoup.connect(mainFrameSet.select("form[name = _Selector2]").first().absUrl("action")).data("SemesterDesc","Fall 2019").data("Department",department.get(i)).timeout(5000).post();
+				Document update = Jsoup.connect(mainFrameSet.select("form[name = _Selector2]").first().absUrl("action")).data("SemesterDesc","Spring 2019").data("Department",department.get(i)).timeout(5000).post();
 				Element text = update.select("pre").first();
 				if(text != null) {
 					String classInformation = text.text();
