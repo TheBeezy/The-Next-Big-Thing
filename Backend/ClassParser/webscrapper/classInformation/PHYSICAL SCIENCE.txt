@@ -1,0 +1,9 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+  5    20  PHSC 1002         1  PHYSICAL SCIENCE       3.0  1230-0120   M W F  0118 NICHOLSON                        MESA D
+
+
+
+
+Spring 2019   PHYSICAL SCIENCE

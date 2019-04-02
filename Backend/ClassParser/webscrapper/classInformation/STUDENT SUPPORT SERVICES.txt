@@ -1,0 +1,12 @@
+ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+  7    13  SSS  1001         3  SSS SUCCS STRATEGY     2.0  1130-1220   M      0234 COATES          PERMIS OF INST   ROBIDEAUX R
+                     REC                                    1130-1220     W    0234 COATES                           ROBIDEAUX R
+     **                    AVAILABLE TO SSS MEMBERS ONLY.  CHECK INFORMATION ABOUT SSS
+     **                    AT SSS.LSU.EDU
+
+
+
+
+Spring 2019   STUDENT SUPPORT SERVICES
