@@ -14,6 +14,12 @@ app.prepare().then(() => {
         app.render(req, res, actualPage, queryParams)
     })
 
+    server.get('/tb/:id', (req, res) => {
+        const actualPage = '/textbook'
+        const queryParams = { id:req.params.id }
+        app.render(req, res, actualPage, queryParams)
+    })
+
     server.get('*', (req,res) => {
         return handle(req,res)
     })
