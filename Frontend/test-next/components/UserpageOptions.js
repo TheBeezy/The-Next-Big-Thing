@@ -64,7 +64,7 @@ class UserpageOptions extends React.Component {
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
-						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XHPRF8RJZKBHS&lc=US&item_name=CSGO%20Nades&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank">
+						<a href=https://www.paypal.me/SunnyNeedsSomeMoney" target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
