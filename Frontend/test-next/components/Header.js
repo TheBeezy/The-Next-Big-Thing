@@ -8,6 +8,7 @@ const linkStyle = {
     marginLeft: '3%',
 }
 const headerStyle = {
+	textAlign: 'center',
     marginLeft: '5%',
     marginRight: '5%',
 }
@@ -25,14 +26,14 @@ const Header = () => (
                 Meeting
             </a>
         </Link>
-        <Link href="/userpage">
-            <a style={linkStyle}>
-                Profile 
-            </a>
-        </Link>
         <Link href="/reviewpage">
             <a style={linkStyle}>
                 Review Page
+            </a>
+        </Link>
+        <Link href="/userpage">
+            <a style={linkStyle}>
+                Profile 
             </a>
         </Link>
         <Link href="/signin">

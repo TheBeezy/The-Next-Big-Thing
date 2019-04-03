@@ -1,14 +1,47 @@
+import React from 'react';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import firebase from 'firebase';
+import data from '../FireBaseConfig.json'
+import Layout from './Layout.js';
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(data);
+}
+
 class UserpageOptions extends React.Component {
 	
 	state = {
+		isSignedIn: false,
+		madeProfile: false,
+		madeLink: false,
 		standardMsg: 'Awaiting Response...',
 		response : '',
 		affirmativeResponse: '',
-		negativeResponse: ''
+		negativeResponse: '',
+		affirmativeVisible: 'hidden',
+		negativeVisible: 'hidden',
+		describeString: 'Description:',
+		describe: ''
 	}
 	
-	
-	
+	uiConfig = {
+		signInFlow: 'popup',
+		signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
+		callbacks: {
+			signInSuccessWithAuthResult: () => false
+		}
+    };
+
+	componentDidMount() {
+		this.unregisterAuthObserver = firebase.auth().onAuthStateChanged(
+			(user) => this.setState({isSignedIn: !!user})
+		);
+	}
+  
+	componentWillUnmount() {
+		this.unregisterAuthObserver();
+	}
+
 	render() {
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Continue to the ',
@@ -20,8 +53,84 @@ class UserpageOptions extends React.Component {
 			this.state.negativeResponse = 'register!',
 			this.state.affirmativeResponse = ''
 		}
-		return(
+		
+		console.log(firebase.auth().currentUser);
+		if (this.state.madeLink){
+			return(
+				<div>
+						<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+						<form on = {e => this.setState({describeString : '2'})}>
+							<p>{this.state.describeString}</p>
+							<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+							<p>Display a paypal link:</p>
+							<input placeholder='www.paypal.com/....'></input>
+							<br/>
+							<br/>
+							<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XHPRF8RJZKBHS&lc=US&item_name=CSGO%20Nades&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank">
+								<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
+							</a>
+							<br/>
+							<br/>
+							<input type="submit" value="Submit"></input>
+						</form>	
+						<p></p>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
+				</div>
+			);
+		}
+		if (this.state.madeProfile) {
+			return(
 			<div>
+					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<form on = {e => this.setState({describeString : '2'})}>
+						<p>{this.state.describeString}</p>
+						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<p>Display a paypal link:</p>
+						<input placeholder='www.paypal.com/....'></input>
+						<br/>
+						<br/>
+						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XHPRF8RJZKBHS&lc=US&item_name=CSGO%20Nades&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank">
+							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
+						</a>
+						<br/>
+						<br/>
+						<input type="submit" value="Submit"></input>
+					</form>	
+					<p></p>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
+				</div>
+			);
+		}
+		if (this.state.isSignedIn) {
+			return(
+				<div>
+					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<form>
+						<p>{this.state.describeString}</p>
+						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<br/>
+						<br/>
+						<button onClick = {e => this.setState({madeProfile : true})}>Enter</button>
+					</form>	
+					<p></p>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
+				</div>
+			);			
+		} return(
+			<div>
+				<h1>Thank you for using Bookmill!</h1>
 				<div>
 					<h4>Please respond to the question to take you to the appropriate page.</h4>
 					<p>Are you currently a member of bookmill?</p>
@@ -39,7 +148,8 @@ class UserpageOptions extends React.Component {
 				<br/>
 				<br/>
 			</div>
-		);
+		);		
+
 	}
 }
 
