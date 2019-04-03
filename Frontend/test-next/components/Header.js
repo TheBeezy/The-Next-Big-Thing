@@ -41,16 +41,6 @@ const Header = () => (
                 Sign In
             </a>
         </Link>
-	    <Link href="/about">
-            <a style={linkStyle}>
-                About
-            </a>
-	    </Link>
-        <Link href="/searchbook">
-            <a style={linkStyle}>
-                Book Search
-            </a>
-	    </Link>
     </div>
 )
 
