@@ -21,7 +21,7 @@ class UserpageOptions extends React.Component {
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
 		describe: 'default1',
-		linkString: 'www.google.com'
+		linkString: 'https://www.google.com'
 	}
 	  
 	
@@ -69,7 +69,7 @@ class UserpageOptions extends React.Component {
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
-						<a href=www.paypal.me/SunnyNeedsSomeMoney target="_blank">
+						<a href={this.state.linkString} target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
@@ -94,10 +94,11 @@ class UserpageOptions extends React.Component {
 						{this.state.describe}</p>
 						<br/>
 						<p>Enter paypal direct link</p>
-						<input style={{ width: 300}} placeholder='www.paypal.com/...'></input>
+						<input id='bigChungus' style={{ width: 300}} placeholder='For usable link, start with https://www.paypal.me/...'></input>
 						<br/>
 						<br/>
-						<button onClick = {e => this.setState({madeLink : true})}>Enter</button>
+						<button onClick= {e => this.setState({linkString: document.getElementById('bigChungus').value,
+															  madeLink : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
