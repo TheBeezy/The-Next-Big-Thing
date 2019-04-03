@@ -144,7 +144,7 @@ class UserpageOptions extends React.Component {
 					</select>
 				</form>
 				<div>
-					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/editUserpage">{this.state.negativeResponse}</a></p>
+					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/signin">{this.state.negativeResponse}</a></p>
 				</div>
 				<br/>
 				<br/>
