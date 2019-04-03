@@ -21,9 +21,8 @@ class UserpageOptions extends React.Component {
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
 		describe: 'default1',
-		linkString: 'https://www.google.com'
+		link: 'default2'
 	}
-	  
 	
 	uiConfig = {
 		signInFlow: 'popup',
@@ -42,10 +41,8 @@ class UserpageOptions extends React.Component {
 	componentWillUnmount() {
 		this.unregisterAuthObserver();
 	}
-	
 
 	render() {
-		console.log(firebase.auth().currentuser)
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Continue to the ',
 			this.state.affirmativeResponse = 'Sign In page.',
@@ -63,13 +60,11 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>Description: 
-						<br/>
-						{this.state.describe}</p>
+						<p>{this.state.describeString}{this.state.describe}</p>
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
-						<a href={this.state.linkString} target="_blank">
+						<a href="https://www.paypal.me/SunnyNeedsSomeMoney" target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
@@ -89,16 +84,13 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>Description: 
-						<br/>
-						{this.state.describe}</p>
+						<p>Discription:{this.state.describe}</p>
 						<br/>
 						<p>Enter paypal direct link</p>
-						<input id='bigChungus' style={{ width: 300}} placeholder='For usable link, start with https://www.paypal.me/...'></input>
+						<input style={{ width: 300}} placeholder='www.paypal.com/...'></input>
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({linkString: document.getElementById('bigChungus').value,
-															  madeLink : true})}>Enter</button>
+						<button onClick = {e => this.setState({madeLink : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
@@ -114,12 +106,11 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>Description:</p>
-						<input id='descrip' style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<p>Discription:</p>
+						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({describe: document.getElementById('descrip').value,
-															  madeProfile : true})}>Enter</button>
+						<button onClick = {e => this.setState({madeProfile : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
