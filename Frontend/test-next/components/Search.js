@@ -61,7 +61,7 @@ class Search extends React.Component {
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
-                <SearchResults results={this.state.results}/>
+                <a href='/textbook'><SearchResults results={this.state.results}/></a>
             </form>
         )
     }
