@@ -5,16 +5,17 @@ import data from '../FireBaseConfig.json'
 if (!firebase.apps.length) {
     firebase.initializeApp(data);
 }
+var db = firebase.firestore();
 
 class Textbook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: '',
+            title: props.id,
             listings: 0.0,
             rating: 0.0,
         }
-        var textbookRef = firebase.firestore().collection('textbooks').where('isbn','==',props.id)
+        var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
         var textbookDoc = textbookRef.get().then(doc => {
             if (!doc.exists) {
               console.log('No such document!');
@@ -34,7 +35,11 @@ class Textbook extends React.Component {
     }
     render() {
         return (
+            <div>
             <h1>{this.state.title}</h1>
+            <p>Listings: {this.state.listings}</p>
+            <p>Rating: {this.state.rating}</p>
+            </div>
         )
     }
 }

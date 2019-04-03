@@ -16,7 +16,6 @@ class Search extends React.Component {
         query: '',
         results: [],
     }
-	
 
     handleInputChange = () => {
         this.setState({
@@ -68,7 +67,6 @@ class Search extends React.Component {
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
-				
                 <Link>
 					<SearchResults results={this.state.results}/>
 				</Link>
