@@ -21,7 +21,7 @@ class UserpageOptions extends React.Component {
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
 		describe: 'default1',
-		link: 'default2'
+		link: ''
 	}
 	
 	uiConfig = {
@@ -110,7 +110,7 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>Discription:</p>
+						<p>Description:</p>
 						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
