@@ -8,7 +8,7 @@ const reviewpage = () => (
             <title>Schedule</title>
         </head>
 		<div>
-			<h1>Make A Review</h1>
+			<h1>Review</h1>
 			<Review/>		
 		</div>
 	</Layout>
