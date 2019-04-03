@@ -60,7 +60,9 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>{this.state.describeString}{this.state.describe}</p>
+						<p>Description: 
+						<br/>
+						{this.state.describe}</p>
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
@@ -84,7 +86,9 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>Discription:{this.state.describe}</p>
+						<p>Description: 
+						<br/>
+						{this.state.describe}</p>
 						<br/>
 						<p>Enter paypal direct link</p>
 						<input style={{ width: 300}} placeholder='www.paypal.com/...'></input>
