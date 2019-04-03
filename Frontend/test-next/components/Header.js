@@ -46,6 +46,11 @@ const Header = () => (
                 About
             </a>
 	    </Link>
+        <Link href="/searchbook">
+            <a style={linkStyle}>
+                Book Search
+            </a>
+	    </Link>
     </div>
 )
 

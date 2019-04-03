@@ -9,7 +9,7 @@ if (!firebase.apps.length) {
 
 const textbook = withRouter(props => (
     <Layout>
-        <h1>{props.router.query.id}</h1>
+        <h1>{props.router.query.title}</h1>
     </Layout>
 ))
 export default textbook

@@ -1,12 +1,14 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
 import SearchResults from './SearchResults.js';
+import Link from 'next/link';
 
 // Initialize firebase
 if (!firebase.apps.length) {
     firebase.initializeApp(data);
 }
 var db = firebase.firestore();
+var textbookName = "";
 
 class Search extends React.Component {
     // Use the results to display a grid of textbook pages
@@ -14,6 +16,7 @@ class Search extends React.Component {
         query: '',
         results: [],
     }
+	
 
     handleInputChange = () => {
         this.setState({
@@ -35,10 +38,13 @@ class Search extends React.Component {
                             snapshot.forEach(doc => {
                                 console.log(doc.id, '=>', doc.data());
                                 var docData = doc.data()
+								textbookName = doc.id;
+								console.log(textbookName);
                                 this.setState(prevState => ({
                                     results: [...prevState.results,docData]
                             }))
                             console.log('Document data:', this.state.results)
+							
                         })}
                     })
                     .catch(err => {
@@ -54,6 +60,7 @@ class Search extends React.Component {
 
     render() {
         return (
+			
             <form>
                 Search:
                 <input
@@ -61,7 +68,12 @@ class Search extends React.Component {
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
-                <a href='/textbook'><SearchResults results={this.state.results}/></a>
+				
+                <Link href={'/textbook?title='+textbookName}>
+					<a>
+						<SearchResults results={this.state.results}/>
+					</a>
+				</Link>
             </form>
         )
     }
