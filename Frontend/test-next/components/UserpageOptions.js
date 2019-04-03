@@ -23,6 +23,7 @@ class UserpageOptions extends React.Component {
 		describe: 'default1',
 		link: ''
 	}
+	  
 	
 	uiConfig = {
 		signInFlow: 'popup',
@@ -41,8 +42,10 @@ class UserpageOptions extends React.Component {
 	componentWillUnmount() {
 		this.unregisterAuthObserver();
 	}
+	
 
 	render() {
+		console.log(firebase.auth().currentuser)
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Continue to the ',
 			this.state.affirmativeResponse = 'Sign In page.',
@@ -114,7 +117,7 @@ class UserpageOptions extends React.Component {
 						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
-						<button onClick = {e => this.setState({madeProfile : true})}>Enter</button>
+						<button onClick= {e => this.setState({madeProfile : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
