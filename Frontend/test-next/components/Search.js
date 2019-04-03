@@ -10,6 +10,10 @@ if (!firebase.apps.length) {
 var db = firebase.firestore();
 var textbookName = "";
 
+const h2Style = {
+    textAlign: 'center',
+}
+
 class Search extends React.Component {
     // Use the results to display a grid of textbook pages
     state = {
@@ -60,8 +64,7 @@ class Search extends React.Component {
 
     render() {
         return (
-			
-            <form>
+			<form><div style = {h2Style}> 
                 Search:
                 <input
                     placeholder="(i.e. ASTR 1102)"
@@ -74,6 +77,7 @@ class Search extends React.Component {
 						<SearchResults results={this.state.results}/>
 					</a>
 				</Link>
+                </div>
             </form>
         )
     }

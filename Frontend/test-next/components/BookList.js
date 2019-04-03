@@ -27,7 +27,7 @@ class Search extends React.Component {
         var start = searchQuery;
         var end = front + String.fromCharCode(back.charCodeAt(0) + 1);
 
-        var query = db.collection("textbooks")
+        var query = db.collection("sellposts")
             .where("name", ">=", start)
             .where("name", "<", end)
             .limit(25).get();

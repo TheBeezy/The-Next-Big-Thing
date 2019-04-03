@@ -6,6 +6,7 @@ const linkStyle = {
     fontSize: '20pt',
     marginRight: '3%',
     marginLeft: '3%',
+    color: 'green'
 }
 const headerStyle = {
 	textAlign: 'center',
