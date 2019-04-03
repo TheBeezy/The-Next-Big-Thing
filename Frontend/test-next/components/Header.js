@@ -26,14 +26,14 @@ const Header = () => (
                 Meeting
             </a>
         </Link>
-        <Link href="/userpage">
-            <a style={linkStyle}>
-                Profile 
-            </a>
-        </Link>
         <Link href="/reviewpage">
             <a style={linkStyle}>
                 Review Page
+            </a>
+        </Link>
+        <Link href="/userpage">
+            <a style={linkStyle}>
+                Profile 
             </a>
         </Link>
         <Link href="/signin">

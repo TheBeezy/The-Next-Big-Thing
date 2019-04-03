@@ -63,8 +63,7 @@ class UserpageOptions extends React.Component {
 						<br/>
 						<br/>
 						<input type="submit" value="Submit"></input>
-					</form>
-					
+					</form>	
 					<p></p>
 					<br/>
 					<br/>
@@ -73,7 +72,7 @@ class UserpageOptions extends React.Component {
 					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
 				</div>
 			);			
-		}	return(
+		} return(
 			<div>
 				<h1>Thank you for using Bookmill!</h1>
 				<div>
