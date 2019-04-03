@@ -18,7 +18,7 @@ class UserpageOptions extends React.Component {
 		negativeResponse: '',
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
-		
+		describeString: 'Description:'
 	}
 	
 	uiConfig = {
@@ -51,36 +51,50 @@ class UserpageOptions extends React.Component {
 			this.state.affirmativeResponse = ''
 		}
 		console.log(firebase.auth().currentUser);
-		if (!this.state.isSignedIn) {
+		if (this.state.isSignedIn) {
 			return(
 				<div>
-					<h1>Thank you for using Bookmill!</h1>
-					<div>
-						<h4>Please respond to the question to take you to the appropriate page.</h4>
-						<p>Are you currently a member of bookmill?</p>
-					</div>
-					<form>
-						<select onChange = {e => this.setState({response : e.target.selectedIndex})}>
-							<option selected hidden disabled> -- Select one of the following. --</option>
-							<option value = 'Sign-In Page'>Yes</option>
-							<option value = 'Registration Page'>No</option>
-						</select>
+					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<form onsubmit = {e => this.setState({describeString : '2'})}>
+						<p>{this.state.describeString}</p>
+						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<p>Display a paypal link:</p>
+						<input placeholder='www.paypal.com/....'></input>
+						<br/>
+						<br/>
+						<input type="submit" value="Submit"></input>
 					</form>
-					<div>
-						<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/editUserpage">{this.state.negativeResponse}</a></p>
-					</div>
+					
+					<p></p>
 					<br/>
 					<br/>
+					<br/>
+					<br/>
+					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
 				</div>
-			);
-		}	
-		return(
-		<div>
-			<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
-			<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
-		</div>
+			);			
+		}	return(
+			<div>
+				<h1>Thank you for using Bookmill!</h1>
+				<div>
+					<h4>Please respond to the question to take you to the appropriate page.</h4>
+					<p>Are you currently a member of bookmill?</p>
+				</div>
+				<form>
+					<select onChange = {e => this.setState({response : e.target.selectedIndex})}>
+						<option selected hidden disabled> -- Select one of the following. --</option>
+						<option value = 'Sign-In Page'>Yes</option>
+						<option value = 'Registration Page'>No</option>
+					</select>
+				</form>
+				<div>
+					<p>{this.state.standardMsg} <a id="yesLink" href="/signin">{this.state.affirmativeResponse}</a> <a id="noLink" href="/editUserpage">{this.state.negativeResponse}</a></p>
+				</div>
+				<br/>
+				<br/>
+			</div>
+		);		
 
-		);
 	}
 }
 

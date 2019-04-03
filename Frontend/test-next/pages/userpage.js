@@ -11,10 +11,6 @@ const userBodyStyle = {
 	textAlign: 'left'
 }
 
-
-
-
-
 export default () => (
     <Layout>
 		<html>
