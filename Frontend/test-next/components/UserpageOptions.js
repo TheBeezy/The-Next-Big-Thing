@@ -20,8 +20,8 @@ class UserpageOptions extends React.Component {
 		negativeResponse: '',
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
-		describeString: 'Description:',
-		describe: ''
+		describe: 'default1',
+		link: 'default2'
 	}
 	
 	uiConfig = {
@@ -58,47 +58,39 @@ class UserpageOptions extends React.Component {
 		if (this.state.madeLink){
 			return(
 				<div>
-						<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
-						<form on = {e => this.setState({describeString : '2'})}>
-							<p>{this.state.describeString}</p>
-							<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
-							<p>Display a paypal link:</p>
-							<input placeholder='www.paypal.com/....'></input>
-							<br/>
-							<br/>
-							<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XHPRF8RJZKBHS&lc=US&item_name=CSGO%20Nades&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank">
-								<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
-							</a>
-							<br/>
-							<br/>
-							<input type="submit" value="Submit"></input>
-						</form>	
-						<p></p>
-						<br/>
-						<br/>
-						<br/>
-						<br/>
-						<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
-				</div>
-			);
-		}
-		if (this.state.madeProfile) {
-			return(
-			<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
-					<form on = {e => this.setState({describeString : '2'})}>
-						<p>{this.state.describeString}</p>
-						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
-						<p>Display a paypal link:</p>
-						<input placeholder='www.paypal.com/....'></input>
+					<form>
+						<p>{this.state.describeString}{this.state.describe}</p>
 						<br/>
 						<br/>
+						<p>Paypal Link:</p>
 						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XHPRF8RJZKBHS&lc=US&item_name=CSGO%20Nades&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
 						<br/>
-						<input type="submit" value="Submit"></input>
+					</form>	
+					<p></p>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
+				</div>
+			);
+		}
+		if (this.state.madeProfile) {
+			return(
+				<div>
+					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<form>
+						<p>Discription:{this.state.describe}</p>
+						<br/>
+						<p>Enter paypal direct link</p>
+						<input style={{ width: 300}} placeholder='www.paypal.com/...'></input>
+						<br/>
+						<br/>
+						<button onClick = {e => this.setState({madeLink : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
@@ -114,7 +106,7 @@ class UserpageOptions extends React.Component {
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
-						<p>{this.state.describeString}</p>
+						<p>Discription:</p>
 						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
