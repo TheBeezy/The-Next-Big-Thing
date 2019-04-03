@@ -21,7 +21,7 @@ class UserpageOptions extends React.Component {
 		affirmativeVisible: 'hidden',
 		negativeVisible: 'hidden',
 		describe: 'default1',
-		link: ''
+		linkString: 'www.google.com'
 	}
 	  
 	
@@ -69,7 +69,7 @@ class UserpageOptions extends React.Component {
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
-						<a href="https://www.paypal.me/SunnyNeedsSomeMoney" target="_blank">
+						<a href=www.paypal.me/SunnyNeedsSomeMoney target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
@@ -114,10 +114,11 @@ class UserpageOptions extends React.Component {
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
 					<form>
 						<p>Description:</p>
-						<input style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<input id='descrip' style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({madeProfile : true})}>Enter</button>
+						<button onClick= {e => this.setState({describe: document.getElementById('descrip').value,
+															  madeProfile : true})}>Enter</button>
 					</form>	
 					<p></p>
 					<br/>
