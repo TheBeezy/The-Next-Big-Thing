@@ -17,6 +17,7 @@ export default () => (
 		<p>byao3@lsu.edu</p>
 		<br/>
 		<p>Austin Lee</p>
+		<p>alee62@lsu.edu</p>
 		<br/>
 		<p>Hieu Mai</p>
 		<p>hmai5@lsu.edu</p>
