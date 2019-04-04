@@ -1,10 +1,5 @@
-import Layout from '../components/Layout'
-import UserpageOptions from '../components/UserpageOptions'
-
-
-const userStyle = {
-    fontFamily: 'Verdana',
-}
+import Layout from '../components/Layout.js'
+import UserpageOptions from '../components/UserpageOptions.js'
 
 const userBodyStyle = {
 	fontFamily: 'Verdana',

@@ -18,10 +18,9 @@ class UserpageOptions extends React.Component {
 		response : '',
 		affirmativeResponse: '',
 		negativeResponse: '',
-		affirmativeVisible: 'hidden',
-		negativeVisible: 'hidden',
-		describe: 'default1',
-		linkString: 'https://www.google.com'
+		describe: '',
+		domainURL: 'https://www.paypal.me/',
+		endingURL: '',
 	}
 	  
 	
@@ -45,15 +44,19 @@ class UserpageOptions extends React.Component {
 	
 
 	render() {
+		var startPPLink = this.state.domainURL;
+		var endingPPLink = this.state.endingURL;
+		var ppLink = startPPLink.concat(endingPPLink);
+		console.log(ppLink)
 		console.log(firebase.auth().currentuser)
 		if (this.state.response == 1){
-			this.state.standardMsg = 'Continue to the ',
-			this.state.affirmativeResponse = 'Sign In page.',
+			this.state.standardMsg = 'Welcome back! Continue to the next page to ',
+			this.state.affirmativeResponse = 'sign in.',
 			this.state.negativeResponse = ''
 		}
 		if (this.state.response == 2){
 			this.state.standardMsg = "You're new here! Continue to the next page to ",
-			this.state.negativeResponse = 'register!',
+			this.state.negativeResponse = 'register.',
 			this.state.affirmativeResponse = ''
 		}
 		
@@ -62,14 +65,16 @@ class UserpageOptions extends React.Component {
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<p>Valued member since {firebase.auth().currentUser.metadata.creationTime}.</p>
 					<form>
 						<p>Description: 
+						<br/>
 						<br/>
 						{this.state.describe}</p>
 						<br/>
 						<br/>
 						<p>Paypal Link:</p>
-						<a href={this.state.linkString} target="_blank">
+						<a href={ppLink} target="_blank">
 							<img id="paypal" src = "static/paypalLogo.png" width="108" height="108"/>
 						</a>
 						<br/>
@@ -88,16 +93,19 @@ class UserpageOptions extends React.Component {
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<p>Valued member since {firebase.auth().currentUser.metadata.creationTime}.</p>
 					<form>
 						<p>Description: 
 						<br/>
+						<br/>
 						{this.state.describe}</p>
 						<br/>
-						<p>Enter paypal direct link</p>
-						<input id='bigChungus' style={{ width: 300}} placeholder='For usable link, start with https://www.paypal.me/...'></input>
+						<p>For digital transactions, type in PayPal link:</p>
+						<p> {this.state.domainURL}  <input id='bigChungus' style={{ width: 300}}></input> </p>
+						
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({linkString: document.getElementById('bigChungus').value,
+						<button onClick= {e => this.setState({endingURL: document.getElementById('bigChungus').value,
 															  madeLink : true})}>Enter</button>
 					</form>	
 					<p></p>
@@ -113,6 +121,7 @@ class UserpageOptions extends React.Component {
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
+					<p>Valued member since {firebase.auth().currentUser.metadata.creationTime}.</p>
 					<form>
 						<p>Description:</p>
 						<input id='descrip' style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
@@ -129,7 +138,8 @@ class UserpageOptions extends React.Component {
 					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
 				</div>
 			);			
-		} return(
+		} 
+		return(
 			<div>
 				<h1>Thank you for using Bookmill!</h1>
 				<div>
