@@ -47,8 +47,6 @@ class UserpageOptions extends React.Component {
 		var startPPLink = this.state.domainURL;
 		var endingPPLink = this.state.endingURL;
 		var ppLink = startPPLink.concat(endingPPLink);
-		console.log(ppLink)
-		console.log(firebase.auth().currentuser)
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Welcome back! Continue to the next page to ',
 			this.state.affirmativeResponse = 'sign in.',
@@ -59,8 +57,6 @@ class UserpageOptions extends React.Component {
 			this.state.negativeResponse = 'register.',
 			this.state.affirmativeResponse = ''
 		}
-		
-		console.log(firebase.auth().currentUser);
 		if (this.state.madeLink){
 			return(
 				<div>
@@ -118,6 +114,8 @@ class UserpageOptions extends React.Component {
 			);
 		}
 		if (this.state.isSignedIn) {
+			var naming = firebase.auth().currentUser.displayName;
+			firebase.database().ref('/user_links_and_descriptions/users').set(naming);
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
