@@ -53,12 +53,12 @@ class AddListing extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Desription:
-              <input
+              <textarea
               name="description"
               type="text"
-			  width="400"
-			  height="200"
-              onChange={this.handleInputChange} />
+			  width="90%"
+			  height="80%"
+              onChange={this.handleInputChange}></textarea>
           </label>
           <br />
           <input type="submit" value="Submit" />
