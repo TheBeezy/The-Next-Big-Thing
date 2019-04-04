@@ -1,6 +1,7 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
 import SearchResults from './SearchResults.js';
+import Link from 'next/link';
 
 // Initialize firebase
 if (!firebase.apps.length) {
@@ -30,7 +31,6 @@ class Search extends React.Component {
                 }
                 var getDoc = tbQuery.get()
                     .then(snapshot => {
-                        console.log(snapshot)
                         if (snapshot.empty) {
                             console.log('No matching documents!')
                         } else {
@@ -59,6 +59,7 @@ class Search extends React.Component {
 
     render() {
         return (
+			
             <form>
                 Search:
                 <input
@@ -66,7 +67,9 @@ class Search extends React.Component {
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
                 />
-				<SearchResults results={this.state.results}/>
+                <Link>
+					<SearchResults results={this.state.results}/>
+				</Link>
             </form>
         )
     }

@@ -2,20 +2,12 @@ import Layout from '../components/Layout'
 import {withRouter} from 'next/router'
 import TextbookRater from '../components/TextbookRater'
 import Textbook from '../components/Textbook'
-import AddListing from '../components/AddListing'
-import firebase from 'firebase'
 
-if (!firebase.apps.length) {
-    firebase.initializeApp(data)
-}
 
 const textbook = withRouter(props => (
     <Layout>
-        <Textbook id={props.router.query.id} db={firebase.firestore()}/>
-		<p>Selling this book? </p>
-		<AddListing listing={props.router.query.id}/>
-        
-
+        <Textbook id={props.router.query.id}/>
+		<p>Selling this book?<a href="javascript:window.open('/sellerPortal','mypopuptitle','width=600,height=400')">Add a Listing!</a></p>
 		<br/>
 		<p>Used this book? Leave a rating</p>
 		<TextbookRater/>
