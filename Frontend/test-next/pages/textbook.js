@@ -2,12 +2,16 @@ import Layout from '../components/Layout'
 import {withRouter} from 'next/router'
 import TextbookRater from '../components/TextbookRater'
 import Textbook from '../components/Textbook'
+import Link from 'next/link'
+import AddListing from '../components/AddListing'
 
 
 const textbook = withRouter(props => (
     <Layout>
         <Textbook id={props.router.query.id}/>
-		<p>Selling this book?<a href="javascript:window.open('/sellerPortal','mypopuptitle','width=600,height=400')">Add a Listing!</a></p>
+		<p>Selling this book? </p>
+		<AddListing listing={props.router.query.id}/>
+		
 		<br/>
 		<p>Used this book? Leave a rating</p>
 		<TextbookRater/>
