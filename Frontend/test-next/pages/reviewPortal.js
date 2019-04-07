@@ -1,7 +1,8 @@
+import SellerInformation from '../components/SellerInformation'
+
 export default (props) => (
     <div>
 		<title>User Review</title>
-        This is a Review
-	
+	      Book Condition: <SellerInformation />
 	</div>
 )

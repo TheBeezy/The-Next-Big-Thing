@@ -12,7 +12,7 @@ class Seller extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-        sellerListing: [],
+        description: [],
         
       }
 
@@ -24,7 +24,7 @@ class Seller extends React.Component {
           } else {
             console.log('Document data:', doc.data());
             this.setState({
-                sellerListing: doc.data().user,
+                description: doc.data().description,
             
 
             })
@@ -37,8 +37,7 @@ class Seller extends React.Component {
   render() {
       return (
           <div>
-          <a href="javascript:window.open('/reviewPortal','mypopuptitle','width=600,height=400')">User: {this.state.sellerListing}</a>
-         
+             {this.state.description}
           </div>
       )
   }
