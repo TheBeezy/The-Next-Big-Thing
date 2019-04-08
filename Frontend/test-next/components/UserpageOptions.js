@@ -47,8 +47,6 @@ class UserpageOptions extends React.Component {
 		var startPPLink = this.state.domainURL;
 		var endingPPLink = this.state.endingURL;
 		var ppLink = startPPLink.concat(endingPPLink);
-		console.log(ppLink)
-		console.log(firebase.auth().currentuser)
 		if (this.state.response == 1){
 			this.state.standardMsg = 'Welcome back! Continue to the next page to ',
 			this.state.affirmativeResponse = 'sign in.',
@@ -59,9 +57,10 @@ class UserpageOptions extends React.Component {
 			this.state.negativeResponse = 'register.',
 			this.state.affirmativeResponse = ''
 		}
-		
-		console.log(firebase.auth().currentUser);
 		if (this.state.madeLink){
+			var userDatabase = firebase.auth().currentUser.displayName;
+			var linkDatabase = this.state.endingURL;
+			firebase.database().ref('/dataUsers/' + userDatabase + '/link').set(linkDatabase);
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
@@ -83,13 +82,14 @@ class UserpageOptions extends React.Component {
 					<p></p>
 					<br/>
 					<br/>
-					<br/>
-					<br/>
 					<button onClick={() => firebase.auth().signOut()}>Sign-out</button>
 				</div>
 			);
 		}
 		if (this.state.madeProfile) {
+			var userDatabase = firebase.auth().currentUser.displayName;
+			var descripDatabase = this.state.describe;
+			firebase.database().ref('/dataUsers/' + userDatabase + '/description').set(descripDatabase);
 			return(
 				<div>
 					<p>Welcome {firebase.auth().currentUser.displayName}, to your profile page.</p>
@@ -101,11 +101,11 @@ class UserpageOptions extends React.Component {
 						{this.state.describe}</p>
 						<br/>
 						<p>For digital transactions, type in PayPal link:</p>
-						<p> {this.state.domainURL}  <input id='bigChungus' style={{ width: 300}}></input> </p>
+						<p> {this.state.domainURL}  <input id='linkInput' style={{ width: 300}}></input> </p>
 						
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({endingURL: document.getElementById('bigChungus').value,
+						<button onClick= {e => this.setState({endingURL: document.getElementById('linkInput').value,
 															  madeLink : true})}>Enter</button>
 					</form>	
 					<p></p>
@@ -124,10 +124,10 @@ class UserpageOptions extends React.Component {
 					<p>Valued member since {firebase.auth().currentUser.metadata.creationTime}.</p>
 					<form>
 						<p>Description:</p>
-						<input id='descrip' style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
+						<input id='descripInput' style={{ width: 500}} placeholder='Say some things you think other users should know.'></input>
 						<br/>
 						<br/>
-						<button onClick= {e => this.setState({describe: document.getElementById('descrip').value,
+						<button onClick= {e => this.setState({describe: document.getElementById('descripInput').value,
 															  madeProfile : true})}>Enter</button>
 					</form>	
 					<p></p>
