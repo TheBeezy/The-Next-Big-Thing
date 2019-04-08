@@ -1,6 +1,3 @@
-import firebase from 'firebase'
-import data from '../FireBaseConfig.json'
-
 class Textbook extends React.Component {
     constructor(props) {
         super(props);
@@ -20,15 +17,13 @@ class Textbook extends React.Component {
                 if(doc.data().listings != null && doc.data().rating != null) {
                   this.setState({
                     title: doc.data().name,
-                    listings: doc.data().listings,
+                    listings: doc.data().listings+1,
                     rating: doc.data().rating,
                   })
                 }
                 else {
                   this.setState({
                     title: doc.data().name,
-                    listings: 0,
-                    rating: 0,
                   })
                 }
               })
@@ -41,9 +36,9 @@ class Textbook extends React.Component {
     render() {
         return (
             <div>
-            <h1>{this.state.title}</h1>
-            <p>Listings: {this.state.listings}</p>
-            <p>Rating: {this.state.rating}</p>
+              <h1>{this.state.title}</h1>
+              <p>Listings: {this.state.listings}</p>
+              <p>Rating: {this.state.rating}</p>
             </div>
         )
     }
