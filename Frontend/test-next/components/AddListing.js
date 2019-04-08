@@ -19,7 +19,11 @@ class AddListing extends React.Component {
   constructor(props) {
     super(props);
     // Holds the values for the text fields
-    this.state = {description: ''};
+    this.state = {
+	description: '', 
+	price: '', 
+	title: props.title
+    };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -29,7 +33,6 @@ class AddListing extends React.Component {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-
     this.setState({
       [name]: value
     });
@@ -40,25 +43,20 @@ class AddListing extends React.Component {
     // Stops the page from refreshing
     event.preventDefault();
     // Sets the data based on text fields
-    /*var setTextBook = db.collection('textbooks').doc(this.state.description).set(prevState => ({
-             listings: [...prevState.listings,this.state.description],
-        }))*/
-	db.runTransaction(function(tx) {
-		
-		tx.get(db.collection('listings')).add({
-			book: this.props.listing,
-			date: new Date().toISOString(),
-			description: document.getElementById('description-box').value,
-			user: 1234
-		}).then(function(listing) {
-			
-			tx.get(db.collection('textbooks').doc("the textbook id").doc(listing)).add({
-				//add the listing to the set of listings
-				
-			})
-	
+	const self = this;
+	console.log(self.state.title);
+	db.collection('textbooks').doc(self.state.title).get()
+	.then(doc => {
+		if(!doc.exists) {
+			console.log("no document");
+		} else {
+			console.log("found");
+			db.collection('textbooks').doc(self.state.title).collection('listings').doc('user3').set({
+				price: this.state.price,
+				description: this.state.description	
+			});
 		}
-    }
+	});
   }
 
   // Form for submitting information (note the names)
@@ -67,7 +65,7 @@ class AddListing extends React.Component {
       <div style={boxStyle}>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Desription:
+            Description:
               <input
               name="description"
 			  id="description-box"
@@ -75,6 +73,8 @@ class AddListing extends React.Component {
 			  width="400"
 			  height="200"
               onChange={this.handleInputChange} />
+	    Price:
+		<input name = "price" id = "price-box" type = "text" width = "400" height = "200" onChange={this.handleInputChange} />
           </label>
           <br />
           <input type="submit" value="Submit" />

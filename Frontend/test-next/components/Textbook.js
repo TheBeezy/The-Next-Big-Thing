@@ -1,5 +1,7 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
+import Link from 'next/link'
+import SellerPortal from '../pages/sellerPortal.js' 
 
 // Initialize firebase
 if (!firebase.apps.length) {
@@ -15,11 +17,12 @@ class Textbook extends React.Component {
             listings: 0.0,
             rating: 0.0,
         }
-        var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
+	console.log(this.state.title + 'test');
+	var textbookRef = db.collection('textbooks').where('subject','==','helloworld'.toUpperCase().trim())
+//        var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
         var textbookDoc = textbookRef.get().then(doc => {
             if (!doc.exists) {
               console.log('No such document!');
-              console.log(props.id)
             } else {
               console.log('Document data:', doc.data());
               this.setState({
@@ -32,6 +35,7 @@ class Textbook extends React.Component {
           .catch(err => {
             console.log('Error getting document', err);
           });
+
     }
     render() {
         return (
@@ -39,6 +43,8 @@ class Textbook extends React.Component {
             <h1>{this.state.title}</h1>
             <p>Listings: {this.state.listings}</p>
             <p>Rating: {this.state.rating}</p>
+	    <p>Post a listing for this book!</p>
+	<SellerPortal title = {this.state.title}/>		
             </div>
         )
     }

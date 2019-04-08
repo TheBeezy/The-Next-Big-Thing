@@ -15,8 +15,8 @@ class Seller extends React.Component {
         description: [],
         
       }
-
-      var sellerRef = db.collection('listings').doc('NOn3ar02fCxtuTbHFgQQ');
+      var sellerRef = db.collection('textbooks').doc('21ST CENTURY ASTR.:SOLAR...(LL)-PKG., KAY').collection('listing');
+//      var sellerRef = db.collection('listings').doc('NOn3ar02fCxtuTbHFgQQ');
       var sellerDoc = sellerRef.get()
       .then(doc => {
           if (!doc.exists) {
@@ -24,7 +24,7 @@ class Seller extends React.Component {
           } else {
             console.log('Document data:', doc.data());
             this.setState({
-                description: doc.data().description,
+                description: doc.data(),
             
 
             })

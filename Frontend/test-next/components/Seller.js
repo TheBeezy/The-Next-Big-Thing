@@ -1,6 +1,7 @@
 import firebase from 'firebase'
 import data from '../FireBaseConfig.json'
-
+import SellerListing from './SellerListing.js';
+import Link from 'next/link'
 
 // Initialize firebase
 if (!firebase.apps.length) {
@@ -9,39 +10,67 @@ if (!firebase.apps.length) {
 var db = firebase.firestore();
 
 class Seller extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-        sellerListing: [],
-        
-      }
+    // Use the results to display a grid of textbook pages
+	constructor(props){
+		super(props);
+		this.state = {
+			title: props.id,
+			sellerListings: [],
+		}
+	}
+	
 
-      var sellerRef = db.collection('listings').doc('NOn3ar02fCxtuTbHFgQQ');
-      var sellerDoc = sellerRef.get()
-      .then(doc => {
-          if (!doc.exists) {
-            console.log('No such document!');
-          } else {
-            console.log('Document data:', doc.data());
-            this.setState({
-                sellerListing: doc.data().user,
-            
 
-            })
-          }
+    handleInputChange = () => {
+        this.setState({
+            sellerListings: [],
+        }, () => {
+            // Use search bar to get a query and log the results (not the prettiest, but it works)
+		console.log('title ' + this.state.title);
+		 var tbQuery = db.collection('textbooks').doc(this.state.title).collection('listings');
+                var getDoc = tbQuery.get()
+                    .then(snapshot => {
+                        if (snapshot.empty) {
+                            console.log('No matching documents!')
+                        } else {
+                            snapshot.forEach(doc => {
+                                console.log(doc.id, '=>', doc.data());
+                                var docData = doc.data()        
+                                this.setState(prevState => ({
+                                    sellerListings: [...prevState.sellerListings,docData]
+                            }))
+                            console.log('Document data:', this.state.results)
+                           
+                        })}
+                    })
+                    .catch(err => {
+                        console.log('Error getting document', err)
+                    });
+                
         })
-        .catch(err => {
-          console.log('Error getting document', err);
-        });
-  }
-  render() {
-      return (
-          <div>
-          <a href="javascript:window.open('/reviewPortal','mypopuptitle','width=600,height=400')">User: {this.state.sellerListing}</a>
-         
-          </div>
-      )
-  }
+    }
+    render() {
+        return (
+//            <form>
+//                Search:
+//                <input
+//                    placeholder="(i.e. ASTR 1102)"
+//                    ref={input => this.search = input}
+//                    onChange={this.handleInputChange}
+//                />
+//		<SellerListing sellerListings = {this.state.sellerListings}/>
+//            </form>
+
+		<form>
+			Search:
+			<input
+			    type = "button" value = "Get Listing" onClick = {this.handleInputChange}
+                />
+			<SellerListing sellerListings = {this.state.sellerListings}/>
+	  </form>
+        )
+    }
+
 }
 
 export default Seller
