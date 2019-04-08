@@ -3,7 +3,6 @@ import {withRouter} from 'next/router'
 import TextbookRater from '../components/TextbookRater'
 import Textbook from '../components/Textbook'
 import Seller from '../components/Seller'
-import PopupWindow from '../components/PopupWindow'
 
 const textbook = withRouter(props => (
     <Layout> 
