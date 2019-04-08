@@ -33,6 +33,8 @@ class Seller extends React.Component {
                             snapshot.forEach(doc => {
                                 console.log(doc.id, '=>', doc.data());
                                 var docData = doc.data()        
+				docData['name'] = doc.id
+				console.log('data ' + docData);
                                 this.setState(prevState => ({
                                     sellerListings: [...prevState.sellerListings,docData]
                             }))
