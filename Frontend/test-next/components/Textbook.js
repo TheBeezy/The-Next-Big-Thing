@@ -18,8 +18,7 @@ class Textbook extends React.Component {
             rating: 0.0,
         }
 	console.log(this.state.title + 'test');
-	var textbookRef = db.collection('textbooks').where('subject','==','helloworld'.toUpperCase().trim())
-//        var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
+        var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
         var textbookDoc = textbookRef.get().then(doc => {
             if (!doc.exists) {
               console.log('No such document!');
