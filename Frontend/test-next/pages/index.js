@@ -6,7 +6,7 @@ import Fetch from 'isomorphic-unfetch'
 export default () => (
     
     <Layout>
-        <title>Home</title>
+            <title>Home</title>
         <p>
             <Search />
         </p>
