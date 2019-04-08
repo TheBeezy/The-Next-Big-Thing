@@ -12,7 +12,6 @@ const textbook = withRouter(props => (
 		<br/>
 		<p>Looking for this book?  See who's selling below!</p>
 		<Seller id={props.router.query.id}/>
-
     </Layout>
 ))
 export default textbook
