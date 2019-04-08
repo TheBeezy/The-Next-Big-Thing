@@ -18,14 +18,11 @@ class Seller extends React.Component {
 			sellerListings: [],
 		}
 	}
-	
-
 
     handleInputChange = () => {
         this.setState({
             sellerListings: [],
         }, () => {
-            // Use search bar to get a query and log the results (not the prettiest, but it works)
 		console.log('title ' + this.state.title);
 		 var tbQuery = db.collection('textbooks').doc(this.state.title).collection('listings');
                 var getDoc = tbQuery.get()
@@ -51,16 +48,6 @@ class Seller extends React.Component {
     }
     render() {
         return (
-//            <form>
-//                Search:
-//                <input
-//                    placeholder="(i.e. ASTR 1102)"
-//                    ref={input => this.search = input}
-//                    onChange={this.handleInputChange}
-//                />
-//		<SellerListing sellerListings = {this.state.sellerListings}/>
-//            </form>
-
 		<form>
 			Search:
 			<input
