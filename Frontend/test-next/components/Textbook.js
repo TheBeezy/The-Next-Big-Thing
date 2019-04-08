@@ -17,7 +17,6 @@ class Textbook extends React.Component {
             listings: 0.0,
             rating: 0.0,
         }
-	console.log(this.state.title + 'test');
         var textbookRef = db.collection('textbooks').where("name",'==',this.state.title)
         var textbookDoc = textbookRef.get().then(doc => {
             if (!doc.exists) {
@@ -40,10 +39,8 @@ class Textbook extends React.Component {
         return (
             <div>
             <h1>{this.state.title}</h1>
-            <p>Listings: {this.state.listings}</p>
-            <p>Rating: {this.state.rating}</p>
 	    <p>Post a listing for this book!</p>
-	<SellerPortal title = {this.state.title}/>		
+		<SellerPortal title = {this.state.title}/>		
             </div>
         )
     }
