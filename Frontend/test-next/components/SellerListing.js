@@ -4,7 +4,7 @@ const SellerListing = (props) => {
   const options = props.sellerListings.map(r => (
     <li key={r.description}>
         <Link as={`/tb/${r.isbn}`}href={`/textbook?id=${r.name}`}>
-            <a>{r.description} {r.price}</a>
+            <a>Seller: {r.name}, Condition:  {r.description}, Price: {r.price}</a>
         </Link>
     </li>
   ))
