@@ -20,17 +20,6 @@ const Header = () => (
                 Home
             </a>
         </Link>
-    	<Link href="/MeetingSchedule">
-            <a style={linkStyle}>
-                Schedule
-                Meeting
-            </a>
-        </Link>
-        <Link href="/reviewpage">
-            <a style={linkStyle}>
-                Review Page
-            </a>
-        </Link>
         <Link href="/userpage">
             <a style={linkStyle}>
                 Profile 
