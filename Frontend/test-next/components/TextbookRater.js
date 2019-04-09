@@ -23,6 +23,39 @@ class TextbookRater extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+	var textbookRef = db.collection('textbooks').where('isbn', '==', props.id)
+    var textbookDoc = textbookRef.get().then(snapshot => {
+      if (snapshot.empty) {
+        console.log('No such document!');
+      } else {
+        snapshot.forEach(doc => {
+          console.log('Document data:', doc.data());
+          this.setState({
+            title: doc.data().name,
+            isbn: doc.data().isbn,
+			numRatings: parseFloat(doc.data().numRatings),
+			avgRating: parseFloat(doc.data().avgRating)
+          }, function() {
+		  if(this.state.numRatings==NaN||this.state.avgRating==NaN){
+			  this.setState({
+				  numRatings: 0,
+				  avgRating: 0
+			  }, function() {
+				  //console.log(this.state.avgRating)   space used to test
+				 })
+			  
+		  }
+		  
+			  
+		  })
+		  
+		  
+		  
+        })
+      }
+    }).catch(err => {
+      console.log('Error getting document', err);
+    });
   }
 
   // Handles whenever the text fields are changed
@@ -40,35 +73,31 @@ class TextbookRater extends React.Component {
   handleSubmit(event) {
     // Stops the page from refreshing
     event.preventDefault();
-    // Sets the data based on text fields
-    var textbook = db.collection('textbooks').doc(this.state.name)
-    var getTextbook = textbook.get().then(doc => {
-      if (doc.exists) {
-        var dbNumRatings = parseFloat(doc.data().numRatings);
-        var dbAvgRating = parseFloat(doc.data().avgRating);
-        this.setState({
-          numRatings: dbNumRatings,
-          avgRating: (((dbNumRatings * dbAvgRating) + this.state.rating) / (dbNumRatings+1))
-        })
-        var setTextBookRating = db.collection('textbooks').doc(this.state.name).set({
-          name: this.state.name,
-          numRatings: this.state.numRatings+1,
-          avgRating: this.state.avgRating,
-        })
-      } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-      }
-    }).catch(function (error) {
-      console.log("Error getting document:", error);
-    });
-  }
+	var newAvgRating = (((this.state.numRatings * this.state.avgRating) + this.state.rating) / (this.state.numRatings+1));
+	var newNumRatings = this.state.numRatings+1;
+    this.setState({
+		avgRating: newAvgRating,
+		numRatings: newNumRatings
+    }, function() {
+		console.log("New Rating: "+this.state.avgRating)
+		var setTextBookRating = db.collection('textbooks').doc(this.state.title).set({
+        numRatings: this.state.numRatings,
+        avgRating: this.state.avgRating,
+		}, { merge: true })
+		
+	})
+	
+    
+   } 
+
 
   handleOptionChange(changeEvent) {
     this.setState({
       selectedOption: changeEvent.target.value,
       rating: parseFloat(changeEvent.target.value),
+	  
     });
+	
   };
 
   // Form for submitting information (note the names)
@@ -76,13 +105,6 @@ class TextbookRater extends React.Component {
     return (
       <div style={boxStyle}>
         <form onSubmit={this.handleSubmit}>
-          <label>
-            TBName:
-              <input
-              name="name"
-              type="text"
-              onChange={this.handleInputChange} />
-          </label>
           <label>
             Rating:
             <input

@@ -15,7 +15,7 @@ const textbook = withRouter(props => (
         <Seller id={props.router.query.id}/>
 		<br/>
 		<p>Used this book? Leave a rating</p>
-		<TextbookRater/>
+		<TextbookRater id={props.router.query.id}/>
 		<br/>
     </Layout>
 ))
