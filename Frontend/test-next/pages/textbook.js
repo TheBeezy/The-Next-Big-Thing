@@ -10,9 +10,9 @@ if (!firebase.apps.length) {
 }
 const textbook = withRouter(props => (
     <Layout> 
-        <Textbook id={props.router.query.id} db={firebase.firestore()}/>
+        <Textbook id={props.router.query.id} db={firebase.firestore()} auth={firebase.auth()}/>
 		<p>Looking for this book?  See who's selling below!</p>
-		<Seller id={props.router.query.id}/>
+        <Seller id={props.router.query.id}/>
 		<br/>
 		<p>Used this book? Leave a rating</p>
 		<TextbookRater/>
