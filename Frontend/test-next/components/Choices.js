@@ -1,3 +1,4 @@
+//Unused
 class Choices extends React.Component {
 	state = {
 		location : 'PFT', hour : '1', minutes : '00', month : 'January', date : '1', period: 'AM'
