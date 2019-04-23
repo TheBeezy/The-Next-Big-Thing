@@ -59,6 +59,7 @@ class TextbookRater extends React.Component {
   }
 
   // Handles whenever the text fields are changed
+    //I believe this is unused but don't want to break anything so leaving it here.
   handleInputChange(event) {
     const target = event.target;
     const value = target.value;
@@ -73,6 +74,7 @@ class TextbookRater extends React.Component {
   handleSubmit(event) {
     // Stops the page from refreshing
     event.preventDefault();
+      //Calculates new rating
 	var newAvgRating = (((this.state.numRatings * this.state.avgRating) + this.state.rating) / (this.state.numRatings+1));
 	var newNumRatings = this.state.numRatings+1;
     this.setState({
@@ -80,10 +82,10 @@ class TextbookRater extends React.Component {
 		numRatings: newNumRatings
     }, function() {
 		console.log("New Rating: "+this.state.avgRating)
-		var setTextBookRating = db.collection('textbooks').doc(this.state.title).set({
+		var setTextBookRating = db.collection('textbooks').doc(this.state.title).set({ //sets new rating in db
         numRatings: this.state.numRatings,
         avgRating: this.state.avgRating,
-		}, { merge: true })
+		}, { merge: true }) //without erasing all previous values!
 		
 	})
 	
